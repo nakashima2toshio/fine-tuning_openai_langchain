@@ -1,0 +1,10 @@
+db: postgresql まず最初に create database [postgres_db] でデータベースを作成する必要がある
+ - docker container exec -it postgres bash
+  - psql -l
+    - psql -U postgres
+
+
+docker ps
+docker logs [コンテナID]
+docker exec -it [コンテナIDまたは名前] bash
+

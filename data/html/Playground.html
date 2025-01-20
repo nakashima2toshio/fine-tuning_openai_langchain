@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="./favicon.png" rel="icon"/>
+  <meta content="width=device-width" name="viewport"/>
+  <link href="./_app/immutable/assets/0.uy2Fq64E.css" rel="stylesheet"/>
+  <link href="./_app/immutable/assets/18.f57kOmf8.css" rel="stylesheet"/>
+  <link href="./_app/immutable/entry/start.DeGkUWpD.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/entry.B_cgZbs-.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/scheduler.CaqlsyK1.js" rel="modulepreload"/>
+  <link href="./_app/immutable/entry/app.zeLHmYJV.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/13.Ra4u4O7Y.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/index.B6TI4_Zl.js" rel="modulepreload"/>
+  <link href="./_app/immutable/nodes/0.ckPRERIZ.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/index.iXbarjOM.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/CopyButton.CumoJvrQ.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/copy.DZUZlfk6.js" rel="modulepreload"/>
+  <link href="./_app/immutable/nodes/18.L0I-MCiF.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/18.2kb3SSJX.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/each.DM4g3a_t.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/stores.CCdqwuXp.js" rel="modulepreload"/>
+  <link href="./_app/immutable/chunks/MetaTags.BxA3G-ni.js" rel="modulepreload"/>
+  <title>
+   Gradio Playground
+  </title>
+  <!-- HEAD_svelte-1a3766n_START -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+  <script async="" data-svelte-h="svelte-28fai2" src="https://www.googletagmanager.com/gtag/js?id=UA-156449732-1">
+  </script>
+  <script data-svelte-h="svelte-iepcrk">
+   window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+		gtag("config", "UA-156449732-1", {
+			cookie_flags: "samesite=none;secure"
+		});
+  </script>
+  <!-- HEAD_svelte-1a3766n_END -->
+  <!-- HEAD_svelte-dkutrw_START -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Play Around with Gradio Demos" name="description"/>
+  <meta content="Gradio Team" name="author"/>
+  <meta content="Gradio Playground" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://gradio.app/playground" property="og:url"/>
+  <meta content="Play Around with Gradio Demos" property="og:description"/>
+  <meta content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@Gradio" name="twitter:creator"/>
+  <meta content="Gradio Playground" name="twitter:title"/>
+  <meta content="Play Around with Gradio Demos." name="twitter:description"/>
+  <meta content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg" name="twitter:image"/>
+  <link href="https://gradio.app/playground" rel="canonical"/>
+  <!-- HEAD_svelte-dkutrw_END -->
+  <!-- HEAD_svelte-n79p6m_START -->
+  <script data-svelte-h="svelte-itl1ge" src="https://cdn.jsdelivr.net/npm/@gradio/lite/dist/lite.js" type="module">
+  </script>
+  <!-- HEAD_svelte-n79p6m_END -->
+  <!-- HEAD_svelte-akxlhu_START -->
+  <link href="https://cdn.jsdelivr.net/npm/@gradio/lite/dist/lite.css" rel="stylesheet"/>
+  <link href="https://gradio-hello-world.hf.space/theme.css" rel="stylesheet"/>
+  <!-- HEAD_svelte-akxlhu_END -->
+ </head>
+ <body data-sveltekit-preload-data="hover" style="min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto">
+  <div style="display: contents">
+   <div class="main-header flex-row">
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gradient-to-r from-white via-yellow-200 to-white px-6 py-2 sm:px-3.5 sm:before:flex-1 mx-auto" data-svelte-h="svelte-m604za">
+     <div class="flex flex-wrap items-center gap-x-4 gap-y-2 flex-grow">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mx-auto">
+       <p class="text-md leading-6 text-gray-700 text-center mx-auto">
+        <strong class="font-semibold">
+         Introducing Gradio Clients
+        </strong>
+       </p>
+       <a class="mx-auto flex-none rounded-full px-3.5 py-1 text-sm font-semibold text-white bg-gradient-to-br from-orange-300 via-orange-500 to-orange-300 hover:drop-shadow-md" href="https://www.youtube.com/watch?v=44vi31hehw4" target="_blank">
+        Watch
+        <span aria-hidden="true">
+         →
+        </span>
+       </a>
+      </div>
+     </div>
+     <div class="hidden justify-end flex-grow sm:flex">
+     </div>
+    </div>
+    <div class="container mx-auto flex flex-wrap justify-between flex-row relative items-center px-4 py-5 gap-6 text-lg z-50">
+     <a data-svelte-h="svelte-72mfco" href="/">
+      <img alt="Gradio logo" src="/_app/immutable/assets/gradio.CHB5adID.svg"/>
+     </a>
+     <svg class="h-8 w-8 lg:hidden" viewbox="-10 -10 20 20">
+      <rect height="2" width="14" x="-7" y="-6">
+      </rect>
+      <rect height="2" width="14" x="-7" y="-1">
+      </rect>
+      <rect height="2" width="14" x="-7" y="4">
+      </rect>
+     </svg>
+     <nav class="w-full flex-col gap-3 lg:flex lg:w-auto lg:flex-row lg:gap-8 hidden">
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-12q4mb7" href="/guides/quickstart">
+       <span>
+        ⚡
+       </span>
+       <span>
+        Quickstart
+       </span>
+      </a>
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-rj6sly" href="/docs">
+       <span>
+        ✍️
+       </span>
+       <span>
+        Docs
+       </span>
+      </a>
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-b4pfpk" href="/playground">
+       <span>
+        🎢
+       </span>
+       <span>
+        Playground
+       </span>
+      </a>
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-1wdzyuc" href="/custom-components/gallery">
+       <span>
+        🖼️
+       </span>
+       <span>
+        Custom Components
+        <sup class="text-orange-500">
+         NEW
+        </sup>
+       </span>
+      </a>
+      <div class="group relative flex cursor-pointer items-center gap-3">
+       <span data-svelte-h="svelte-v9wlbr">
+        🖐
+       </span>
+       <span data-svelte-h="svelte-1ufc5dh">
+        Community
+       </span>
+       <svg class="h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+        </path>
+       </svg>
+      </div>
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-14vdzms" href="https://github.com/gradio-app/gradio">
+       <img alt="Github logo" class="w-6" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2016.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20width='438.549px'%20height='438.549px'%20viewBox='0%200%20438.549%20438.549'%20style='enable-background:new%200%200%20438.549%20438.549;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365%20c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63%20c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996%20c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136%20c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559%20c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559%20c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997%20c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851%20c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136%20c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41%20c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126%20c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817%20c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994%20c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849%20c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24%20c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979%20c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146%20c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995%20c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906%20C438.536,184.851,428.728,148.168,409.132,114.573z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e"/>
+      </a>
+     </nav>
+    </div>
+   </div>
+   <div class="flex-row" data-svelte-h="svelte-e0g1dh">
+    <div class="flex flex-row relative items-center px-1 py-1 pr-6 text-lg gap-8">
+     <div class="flex">
+      <a href="/">
+       <img alt="Gradio logo" src="/_app/immutable/assets/gradio.CHB5adID.svg"/>
+      </a>
+      <p class="self-center text-xl font-light -m-1">
+       Playground
+      </p>
+     </div>
+     <nav class="flex w-auto flex-row gap-6">
+      <a class="thin-link flex items-center gap-3" href="/docs" target="_blank">
+       <span>
+        ✍️
+       </span>
+       <span>
+        Docs
+       </span>
+      </a>
+      <a class="thin-link flex items-center gap-3" href="/guides/gradio-lite" target="_blank">
+       <span>
+        💡
+       </span>
+       <span>
+        Gradio Lite
+       </span>
+      </a>
+     </nav>
+    </div>
+   </div>
+   <main class="playground flex flex-col justify-between">
+    <div class="container mx-auto px-4 gap-4" data-svelte-h="svelte-18rjyq8">
+     <p class="mt-4 mb-8 text-lg text-gray-600 md:hidden">
+      Playground renders best on desktop.
+     </p>
+    </div>
+    <div class="w-full border border-gray-200 shadow-xl h-full relative">
+     <div class="w-[200px] h-full rounded-tr-none rounded-bl-xl overflow-y-scroll mb-0 p-0 pb-4 text-md block rounded-t-xl bg-gradient-to-r from-white to-gray-50 overflow-x-clip" style="word-break: normal; overflow-wrap: break-word; white-space:nowrap; width: 200px;">
+      <div class="flex justify-between align-middle h-8 border-b px-2">
+       <h3 class="pl-2 pt-1" data-svelte-h="svelte-1hpwami">
+        Demos
+       </h3>
+       <button class="float-right text-gray-600 pl-1">
+        ←
+       </button>
+      </div>
+      <button class="thin-link font-light px-4 mt-2 block" data-svelte-h="svelte-112gf7d">
+       Blank
+      </button>
+      <p class="px-4 my-2">
+       Text
+      </p>
+      <button class="thin-link font-light px-4 block current-playground-demo">
+       Hello World
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Hello Blocks
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Sentence Builder
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Diff Texts
+      </button>
+      <p class="px-4 my-2">
+       Media
+      </p>
+      <button class="thin-link font-light px-4 block">
+       Sepia Filter
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Video Identity
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Iterative Output
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Generate Tone
+      </button>
+      <p class="px-4 my-2">
+       Tabular
+      </p>
+      <button class="thin-link font-light px-4 block">
+       Filter Records
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Transpose Matrix
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Tax Calculator
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Kinematics
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Stock Forecast
+      </button>
+      <p class="px-4 my-2">
+       Other
+      </p>
+      <button class="thin-link font-light px-4 block">
+       Tabbed Interface
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Chatbot
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Streaming Chatbot
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Layouts
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Error
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Chained Events
+      </button>
+      <button class="thin-link font-light px-4 block">
+       Change Listener
+      </button>
+     </div>
+     <div class="flex flex-row" style="position: absolute; top: -6%; right: 0.4%">
+      <button class="border border-gray-300 rounded-md mx-2 px-2 py-.5 my-[3px] text-md text-gray-600 hover:bg-gray-50 flex">
+       <img class="!w-5 align-text-top inline-block self-center mr-1" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%236d7787'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       <p class="inline-block" data-svelte-h="svelte-i22q59">
+        Share Your App
+       </p>
+      </button>
+     </div>
+     <div class="absolute top-0 bottom-0 right-0" style="left:200px">
+      <div class="wrap svelte-1v7nqk0">
+       <div class="flex-row min-w-0 h-full flex">
+        <div class="code-editor w-full border-r svelte-gnvmsf" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:781e6903-4f0c-4baf-9305-370e092fd1eb" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:da7ec3e7-2172-444d-b1a2-058e5e5ee67c" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:56fea317-611b-41b8-bed0-162b6c78f334" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:18642016-d2e5-465b-93b8-d07e3d42fcc4" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:401b2c40-c0b7-4d41-9b46-453849fcde39" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:6fd1ac67-8d9c-4afd-a93c-75830723e8b9" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:8808f768-5ad3-4bac-aaad-d346fbb806d0" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:591fcdd5-fe10-45e7-acd8-a32564e8a041" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:b6cec90d-bf0a-4d83-91c3-125abc7ae061" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:ada5b754-116b-440b-b7d3-03d64880ce25" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:80b52054-9913-47a6-950f-0a16b6636c52" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:3bc0fd50-61e8-4241-a23b-b8ebe77e5891" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:d00de7f3-81cc-4431-93aa-eaf13158596f" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:b0f29c11-47f7-4334-a23d-12ac164a5ef3" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:f5cf2a1d-f054-4723-87a5-006f39ec050f" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:fa82e1be-0011-42c8-96d4-f21d8380705b" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:4be25d1d-8191-44ef-97fe-c45a1521e653" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:8bd1df60-b66e-467d-bb6b-d948c64d182a" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:d4872128-508d-4c56-8364-4bcafd8f4c35" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:c1fa9aeb-b0ed-4ba3-aa03-8636af6590e6" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="code-editor w-full border-r svelte-gnvmsf" hidden="" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2" data-svelte-h="svelte-180yfiw">
+          <h3 class="pt-1">
+           Code
+          </h3>
+          <div class="flex float-right">
+          </div>
+         </div>
+         <div class="block svelte-nl1om8" id="" style="border-style: solid; overflow: visible; min-width: calc(min(0px, 100%)); border-width: var(--block-border-width);">
+          <div class="wrap default full svelte-16nch4a hide" style="position: absolute; padding: 0;">
+          </div>
+          <label class="svelte-9gxdi0" data-testid="block-label" for="">
+           <span class="svelte-9gxdi0">
+            <svg height="100%" viewbox="0 0 32 32" width="100%">
+             <path d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7zm11.42 9.484L17.64 6l1.932.517L14.352 26z" fill="currentColor">
+             </path>
+            </svg>
+           </span>
+          </label>
+          <div class="svelte-1bqqv16">
+           <div class="container svelte-peh06t">
+            <a download="file.py" href="blob:nodedata:b4f1ee17-d194-41c9-833f-9fa4b4ea4c1d" rel="noopener noreferrer">
+             <svg height="100%" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z" fill="currentColor">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <button aria-label="Copy" aria-roledescription="Copy value" class="svelte-qjb524" title="copy">
+            <svg color="currentColor" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+             <path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Z" fill="currentColor">
+             </path>
+             <path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+          <div class="wrap svelte-1f1hlu0">
+           <div class="codemirror-wrapper svelte-1f1hlu0">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="preview w-full mx-auto svelte-gnvmsf" style="width: 50%">
+         <div class="flex justify-between align-middle h-8 border-b pl-4 pr-2 ml-0 sm:ml-2">
+          <div class="flex align-middle">
+           <h3 class="pr-2 pt-1" data-svelte-h="svelte-1nl8pcc">
+            Preview
+           </h3>
+           <p class="pt-1.5 text-sm text-gray-600 hidden sm:block">
+            87px
+           </p>
+           <p class="pt-2 text-sm pl-2 w-6 hidden sm:block text-gray-300" data-svelte-h="svelte-e0x6w2">
+            <svg viewbox="0 0 110 100" xmlns="http://www.w3.org/2000/svg">
+             <rect fill="currentColor" height="100" rx="15" width="50">
+             </rect>
+             <rect fill="currentColor" height="100" rx="15" width="50" x="60">
+             </rect>
+            </svg>
+           </p>
+           <p class="pt-2 text-sm pl-2 w-6 hidden sm:block text-orange-300" data-svelte-h="svelte-s4xv41">
+            <svg viewbox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+             <rect fill="currentColor" height="45" rx="15" width="110">
+             </rect>
+             <rect fill="currentColor" height="45" rx="15" width="110" y="50">
+             </rect>
+            </svg>
+           </p>
+          </div>
+          <div class="flex">
+           <button class="ml-1 w-[20px] float-right text-gray-600">
+            <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+             <path d="M6 14c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1H7v-2c0-.55-.45-1-1-1zm0-4c.55 0 1-.45 1-1V7h2c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm11 7h-2c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1s-1 .45-1 1v2zM14 6c0 .55.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1V6c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </div>
+         </div>
+         <div class="lite-demo h-[93%] pl-3 svelte-gnvmsf" id="lite-demo">
+         </div>
+        </div>
+       </div>
+       <div class="outer hidden sm:block svelte-1v7nqk0" role="none" style="transform: translateX(0px)">
+        <div class="inner svelte-1v7nqk0" hidden="">
+         <div class="notches text-gray-400 select-none svelte-1v7nqk0" data-svelte-h="svelte-17hcxhk">
+          ||
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </main>
+   <footer class="main-footer container mx-auto flex-row flex items-center px-4 py-6 justify-between" data-svelte-h="svelte-rbo7yn">
+    <a href="/">
+     <img alt="Gradio logo" src="/_app/immutable/assets/gradio.CHB5adID.svg"/>
+    </a>
+    <div class="flex gap-3">
+     <a class="text-gray-400 hover:text-gray-500" href="https://status.gradio.app" target="_blank">
+      <span>
+       Status
+      </span>
+     </a>
+     <a class="hover:opacity-75 transition" href="https://twitter.com/Gradio">
+      <img alt="Twitter logo" class="w-6" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20stroke='currentColor'%20fill='gray'%20height='32'%20width='32'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M389.2%2048h70.6L305.6%20224.2%20487%20464H345L233.7%20318.6%20106.5%20464H35.8L200.7%20275.5%2026.8%2048H172.4L272.9%20180.9%20389.2%2048zM364.4%20421.8h39.1L151.1%2088h-42L364.4%20421.8z'/%3e%3c/svg%3e"/>
+     </a>
+     <a class="hover:opacity-75 transition" href="https://github.com/gradio-app/gradio">
+      <img alt="Github logo" class="w-6" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2016.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20width='438.549px'%20height='438.549px'%20viewBox='0%200%20438.549%20438.549'%20style='enable-background:new%200%200%20438.549%20438.549;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20fill='gray'%20d='M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365%20c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63%20c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996%20c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136%20c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559%20c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559%20c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997%20c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851%20c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136%20c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41%20c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126%20c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817%20c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994%20c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849%20c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24%20c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979%20c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146%20c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995%20c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906%20C438.536,184.851,428.728,148.168,409.132,114.573z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e"/>
+     </a>
+    </div>
+   </footer>
+   <script>
+    {
+					__sveltekit_ypyqu1 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":null,"uses":{"url":1}},{"type":"data","data":{demos_by_category:[{category:"Text",demos:[{name:"Hello World",dir:"hello_world",code:"import gradio as gr\n\ndef greet(name):\n    return \"Hello \" + name + \"!\"\n\ndemo = gr.Interface(fn=greet, inputs=\"textbox\", outputs=\"textbox\")\n    \nif __name__ == \"__main__\":\n    demo.launch()   ",text:"The simplest possible Gradio demo. It wraps a 'Hello {name}!' function in an Interface that accepts and returns text.",requirements:[]},{name:"Hello Blocks",dir:"hello_blocks",code:"import gradio as gr\n\n\ndef greet(name):\n    return \"Hello \" + name + \"!\"\n\n\nwith gr.Blocks() as demo:\n    name = gr.Textbox(label=\"Name\")\n    output = gr.Textbox(label=\"Output Box\")\n    greet_btn = gr.Button(\"Greet\")\n    greet_btn.click(fn=greet, inputs=name, outputs=output, api_name=\"greet\")\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Sentence Builder",dir:"sentence_builder",code:"import gradio as gr\n\n\ndef sentence_builder(quantity, animal, countries, place, activity_list, morning):\n    return f\"\"\"The {quantity} {animal}s from {\" and \".join(countries)} went to the {place} where they {\" and \".join(activity_list)} until the {\"morning\" if morning else \"night\"}\"\"\"\n\n\ndemo = gr.Interface(\n    sentence_builder,\n    [\n        gr.Slider(2, 20, value=4, label=\"Count\", info=\"Choose between 2 and 20\"),\n        gr.Dropdown(\n            [\"cat\", \"dog\", \"bird\"], label=\"Animal\", info=\"Will add more animals later!\"\n        ),\n        gr.CheckboxGroup([\"USA\", \"Japan\", \"Pakistan\"], label=\"Countries\", info=\"Where are they from?\"),\n        gr.Radio([\"park\", \"zoo\", \"road\"], label=\"Location\", info=\"Where did they go?\"),\n        gr.Dropdown(\n            [\"ran\", \"swam\", \"ate\", \"slept\"], value=[\"swam\", \"slept\"], multiselect=True, label=\"Activity\", info=\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc, eget aliquam nisl nunc vel nisl.\"\n        ),\n        gr.Checkbox(label=\"Morning\", info=\"Did they do it in the morning?\"),\n    ],\n    \"text\",\n    examples=[\n        [2, \"cat\", [\"Japan\", \"Pakistan\"], \"park\", [\"ate\", \"swam\"], True],\n        [4, \"dog\", [\"Japan\"], \"zoo\", [\"ate\", \"swam\"], False],\n        [10, \"bird\", [\"USA\", \"Pakistan\"], \"road\", [\"ran\"], False],\n        [8, \"cat\", [\"Pakistan\"], \"zoo\", [\"ate\"], True],\n    ]\n)\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Diff Texts",dir:"diff_texts",code:"from difflib import Differ\n\nimport gradio as gr\n\n\ndef diff_texts(text1, text2):\n    d = Differ()\n    return [\n        (token[2:], token[0] if token[0] != \" \" else None)\n        for token in d.compare(text1, text2)\n    ]\n\n\ndemo = gr.Interface(\n    diff_texts,\n    [\n        gr.Textbox(\n            label=\"Text 1\",\n            info=\"Initial text\",\n            lines=3,\n            value=\"The quick brown fox jumped over the lazy dogs.\",\n        ),\n        gr.Textbox(\n            label=\"Text 2\",\n            info=\"Text to compare\",\n            lines=3,\n            value=\"The fast brown fox jumps over lazy dogs.\",\n        ),\n    ],\n    gr.HighlightedText(\n        label=\"Diff\",\n        combine_adjacent=True,\n        show_legend=True,\n        color_map={\"+\": \"red\", \"-\": \"green\"}),\n    theme=gr.themes.Base()\n)\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]}]},{category:"Media",demos:[{name:"Sepia Filter",dir:"sepia_filter",code:"import numpy as np\nimport gradio as gr\n\ndef sepia(input_img):\n    sepia_filter = np.array([\n        [0.393, 0.769, 0.189], \n        [0.349, 0.686, 0.168], \n        [0.272, 0.534, 0.131]\n    ])\n    sepia_img = input_img.dot(sepia_filter.T)\n    sepia_img /= sepia_img.max()\n    return sepia_img\n\ndemo = gr.Interface(sepia, gr.Image(), \"image\")\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Video Identity",dir:"video_identity_2",code:"import gradio as gr\n\ndef video_identity(video):\n    return video\n\n\ndemo = gr.Interface(video_identity, \n                    gr.Video(), \n                    \"playable_video\", \n                    )\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Iterative Output",dir:"fake_diffusion",code:"import gradio as gr\nimport numpy as np\nimport time\n\ndef fake_diffusion(steps):\n    rng = np.random.default_rng()\n    for i in range(steps):\n        time.sleep(1)\n        image = rng.random(size=(600, 600, 3))\n        yield image\n    image = np.ones((1000,1000,3), np.uint8)\n    image[:] = [255, 124, 0]\n    yield image\n\n\ndemo = gr.Interface(fake_diffusion,\n                    inputs=gr.Slider(1, 10, 3, step=1),\n                    outputs=\"image\")\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"This demo uses a fake model to showcase iterative output. The Image output will update every time a generator is returned until the final image.",requirements:["numpy"]},{name:"Generate Tone",dir:"generate_tone",code:"import numpy as np\nimport gradio as gr\n\nnotes = [\"C\", \"C#\", \"D\", \"D#\", \"E\", \"F\", \"F#\", \"G\", \"G#\", \"A\", \"A#\", \"B\"]\n\ndef generate_tone(note, octave, duration):\n    sr = 48000\n    a4_freq, tones_from_a4 = 440, 12 * (octave - 4) + (note - 9)\n    frequency = a4_freq * 2 ** (tones_from_a4 / 12)\n    duration = int(duration)\n    audio = np.linspace(0, duration, duration * sr)\n    audio = (20000 * np.sin(audio * (2 * np.pi * frequency))).astype(np.int16)\n    return sr, audio\n\ndemo = gr.Interface(\n    generate_tone,\n    [\n        gr.Dropdown(notes, type=\"index\"),\n        gr.Slider(4, 6, step=1),\n        gr.Textbox(value=1, label=\"Duration in seconds\"),\n    ],\n    \"audio\",\n)\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:["numpy"]}]},{category:"Tabular",demos:[{name:"Filter Records",dir:"filter_records",code:"import gradio as gr\n\n\ndef filter_records(records, gender):\n    return records[records[\"gender\"] == gender]\n\n\ndemo = gr.Interface(\n    filter_records,\n    [\n        gr.Dataframe(\n            headers=[\"name\", \"age\", \"gender\"],\n            datatype=[\"str\", \"number\", \"str\"],\n            row_count=5,\n            col_count=(3, \"fixed\"),\n        ),\n        gr.Dropdown([\"M\", \"F\", \"O\"]),\n    ],\n    \"dataframe\",\n    description=\"Enter gender as 'M', 'F', or 'O' for other.\",\n)\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Transpose Matrix",dir:"matrix_transpose",code:"import numpy as np\n\nimport gradio as gr\n\n\ndef transpose(matrix):\n    return matrix.T\n\n\ndemo = gr.Interface(\n    transpose,\n    gr.Dataframe(type=\"numpy\", datatype=\"number\", row_count=5, col_count=3),\n    \"numpy\",\n    examples=[\n        [np.zeros((3, 3)).tolist()],\n        [np.ones((2, 2)).tolist()],\n        [np.random.randint(0, 10, (3, 10)).tolist()],\n        [np.random.randint(0, 10, (10, 3)).tolist()],\n        [np.random.randint(0, 10, (10, 10)).tolist()],\n    ],\n    cache_examples=False\n)\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Tax Calculator",dir:"tax_calculator",code:"import gradio as gr\n\ndef tax_calculator(income, marital_status, assets):\n    tax_brackets = [(10, 0), (25, 8), (60, 12), (120, 20), (250, 30)]\n    total_deductible = sum(assets[\"Cost\"])\n    taxable_income = income - total_deductible\n\n    total_tax = 0\n    for bracket, rate in tax_brackets:\n        if taxable_income > bracket:\n            total_tax += (taxable_income - bracket) * rate / 100\n\n    if marital_status == \"Married\":\n        total_tax *= 0.75\n    elif marital_status == \"Divorced\":\n        total_tax *= 0.8\n\n    return round(total_tax)\n\ndemo = gr.Interface(\n    tax_calculator,\n    [\n        \"number\",\n        gr.Radio([\"Single\", \"Married\", \"Divorced\"]),\n        gr.Dataframe(\n            headers=[\"Item\", \"Cost\"],\n            datatype=[\"str\", \"number\"],\n            label=\"Assets Purchased this Year\",\n        ),\n    ],\n    \"number\",\n    examples=[\n        [10000, \"Married\", [[\"Suit\", 5000], [\"Laptop\", 800], [\"Car\", 1800]]],\n        [80000, \"Single\", [[\"Suit\", 800], [\"Watch\", 1800], [\"Car\", 800]]],\n    ],\n)\n\ndemo.launch()\n",text:"Calculate taxes using Textbox, Radio, and Dataframe components",requirements:[]},{name:"Kinematics",dir:"blocks_kinematics",code:"import pandas as pd\nimport numpy as np\n\nimport gradio as gr\n\n\ndef plot(v, a):\n    g = 9.81\n    theta = a / 180 * 3.14\n    tmax = ((2 * v) * np.sin(theta)) / g\n    timemat = tmax * np.linspace(0, 1, 40)\n\n    x = (v * timemat) * np.cos(theta)\n    y = ((v * timemat) * np.sin(theta)) - ((0.5 * g) * (timemat**2))\n    df = pd.DataFrame({\"x\": x, \"y\": y})\n    return df\n\n\ndemo = gr.Blocks()\n\nwith demo:\n    gr.Markdown(\n        r\"Let's do some kinematics! Choose the speed and angle to see the trajectory. Remember that the range $R = v_0^2 \\cdot \\frac{\\sin(2\\theta)}{g}$\"\n    )\n\n    with gr.Row():\n        speed = gr.Slider(1, 30, 25, label=\"Speed\")\n        angle = gr.Slider(0, 90, 45, label=\"Angle\")\n    output = gr.LinePlot(\n        x=\"x\",\n        y=\"y\",\n        overlay_point=True,\n        tooltip=[\"x\", \"y\"],\n        x_lim=[0, 100],\n        y_lim=[0, 60],\n        width=350,\n        height=300,\n    )\n    btn = gr.Button(value=\"Run\")\n    btn.click(plot, [speed, angle], output)\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Stock Forecast",dir:"stock_forecast",code:"import matplotlib.pyplot as plt\nimport numpy as np\n\nimport gradio as gr\n\n\ndef plot_forecast(final_year, companies, noise, show_legend, point_style):\n    start_year = 2020\n    x = np.arange(start_year, final_year + 1)\n    year_count = x.shape[0]\n    plt_format = ({\"cross\": \"X\", \"line\": \"-\", \"circle\": \"o--\"})[point_style]\n    fig = plt.figure()\n    ax = fig.add_subplot(111)\n    for i, company in enumerate(companies):\n        series = np.arange(0, year_count, dtype=float)\n        series = series**2 * (i + 1)\n        series += np.random.rand(year_count) * noise\n        ax.plot(x, series, plt_format)\n    if show_legend:\n        plt.legend(companies)\n    return fig\n\n\ndemo = gr.Interface(\n    plot_forecast,\n    [\n        gr.Radio([2025, 2030, 2035, 2040], label=\"Project to:\"),\n        gr.CheckboxGroup([\"Google\", \"Microsoft\", \"Gradio\"], label=\"Company Selection\"),\n        gr.Slider(1, 100, label=\"Noise Level\"),\n        gr.Checkbox(label=\"Show Legend\"),\n        gr.Dropdown([\"cross\", \"line\", \"circle\"], label=\"Style\"),\n    ],\n    gr.Plot(label=\"forecast\"),\n)\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:["numpy","matplotlib"]}]},{category:"Other",demos:[{name:"Tabbed Interface",dir:"tabbed_interface_lite",code:"import gradio as gr\n\nhello_world = gr.Interface(lambda name: \"Hello \" + name, \"text\", \"text\")\nbye_world = gr.Interface(lambda name: \"Bye \" + name, \"text\", \"text\")\n\ndemo = gr.TabbedInterface([hello_world, bye_world], [\"Hello World\", \"Bye World\"])\n\nif __name__ == \"__main__\":\n    demo.launch()",text:"",requirements:[]},{name:"Chatbot",dir:"chatinterface_random_response",code:"import random\nimport gradio as gr\n\ndef random_response(message, history):\n    return random.choice([\"Yes\", \"No\"])\n\ndemo = gr.ChatInterface(random_response)\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Streaming Chatbot",dir:"chatinterface_streaming_echo",code:"import time\nimport gradio as gr\n\n\ndef slow_echo(message, history):\n    for i in range(len(message)):\n        time.sleep(0.05)\n        yield \"You typed: \" + message[: i + 1]\n\n\ndemo = gr.ChatInterface(slow_echo).queue()\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Layouts",dir:"blocks_flipper",code:"import numpy as np\nimport gradio as gr\n\n\ndef flip_text(x):\n    return x[::-1]\n\n\ndef flip_image(x):\n    return np.fliplr(x)\n\n\nwith gr.Blocks() as demo:\n    gr.Markdown(\"Flip text or image files using this demo.\")\n    with gr.Tab(\"Flip Text\"):\n        text_input = gr.Textbox()\n        text_output = gr.Textbox()\n        text_button = gr.Button(\"Flip\")\n    with gr.Tab(\"Flip Image\"):\n        with gr.Row():\n            image_input = gr.Image()\n            image_output = gr.Image()\n        image_button = gr.Button(\"Flip\")\n\n    with gr.Accordion(\"Open for More!\", open=False):\n        gr.Markdown(\"Look at me...\")\n        temp_slider = gr.Slider(\n            minimum=0.0,\n            maximum=1.0,\n            value=0.1,\n            step=0.1,\n            interactive=True,\n            label=\"Slide me\",\n        )\n        temp_slider.change(lambda x: x, [temp_slider])\n\n    text_button.click(flip_text, inputs=text_input, outputs=text_output)\n    image_button.click(flip_image, inputs=image_input, outputs=image_output)\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Error",dir:"calculator",code:"import gradio as gr\n#from foo import BAR\n#\ndef calculator(num1, operation, num2):\n    if operation == \"add\":\n        return num1 + num2\n    elif operation == \"subtract\":\n        return num1 - num2\n    elif operation == \"multiply\":\n        return num1 * num2\n    elif operation == \"divide\":\n        if num2 == 0:\n            raise gr.Error(\"Cannot divide by zero!\")\n        return num1 / num2\n\ndemo = gr.Interface(\n    calculator,\n    [\n        \"number\", \n        gr.Radio([\"add\", \"subtract\", \"multiply\", \"divide\"]),\n        \"number\"\n    ],\n    \"number\",\n    examples=[\n        [45, \"add\", 3],\n        [3.14, \"divide\", 2],\n        [144, \"multiply\", 2.5],\n        [0, \"subtract\", 1.2],\n    ],\n    title=\"Toy Calculator\",\n    description=\"Here's a sample toy calculator. Allows you to calculate things like $2+2=4$\",\n)\n\nif __name__ == \"__main__\":\n    demo.launch()\n",text:"",requirements:[]},{name:"Chained Events",dir:"blocks_chained_events",code:"import gradio as gr\nimport time\n\n\ndef failure():\n    raise gr.Error(\"This should fail!\")\n\ndef exception():\n    raise ValueError(\"Something went wrong\")\n\ndef success():\n    return True\n\ndef warning_fn():\n    gr.Warning(\"This is a warning!\")\n\ndef info_fn():\n    gr.Info(\"This is some info\")\n\n\nwith gr.Blocks() as demo:\n    gr.Markdown(\"Used in E2E tests of success event trigger. The then event covered in chatbot E2E tests.\"\n                \" Also testing that the status modals show up.\")\n    with gr.Row():\n        result = gr.Textbox(label=\"Result\")\n        result_2 = gr.Textbox(label=\"Consecutive Event\")\n    with gr.Row():\n        success_btn = gr.Button(value=\"Trigger Success\")\n        success_btn_2 = gr.Button(value=\"Trigger Consecutive Success\")\n        failure_btn = gr.Button(value=\"Trigger Failure\")\n        failure_exception = gr.Button(value=\"Trigger Failure With ValueError\")\n    with gr.Row():\n        trigger_warning = gr.Button(value=\"Trigger Warning\")\n        trigger_info = gr.Button(value=\"Trigger Info\")\n\n        success_btn_2.click(success, None, None).success(lambda: \"First Event Trigered\", None, result).success(lambda: \"Consecutive Event Triggered\", None, result_2)\n        success_btn.click(success, None, None).success(lambda: \"Success event triggered\", inputs=None, outputs=result)\n        failure_btn.click(failure, None, None).success(lambda: \"Should not be triggered\", inputs=None, outputs=result)\n        failure_exception.click(exception, None, None)\n        trigger_warning.click(warning_fn, None, None)\n        trigger_info.click(info_fn, None, None)\n\ndemo.queue()\n\nif __name__ == \"__main__\":\n    demo.launch(show_error=True)",text:"",requirements:[]},{name:"Change Listener",dir:"blocks_hello",code:"import gradio as gr\n\ndef welcome(name):\n    return f\"Welcome to Gradio, {name}!\"\n\nwith gr.Blocks() as demo:\n    gr.Markdown(\n    \"\"\"\n    # Hello World!\n    Start typing below to see the output.\n    \"\"\")\n    inp = gr.Textbox(placeholder=\"What is your name?\")\n    out = gr.Textbox()\n    inp.change(welcome, inp, out)\n\nif __name__ == \"__main__\":\n    demo.launch()",text:"",requirements:[]}]}]},"uses":{}}];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.DeGkUWpD.js"),
+						import("./_app/immutable/entry/app.zeLHmYJV.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 18],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+   </script>
+  </div>
+ </body>
+</html>

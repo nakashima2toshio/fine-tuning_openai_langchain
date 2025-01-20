@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="../favicon.png" rel="icon"/>
+  <meta content="width=device-width" name="viewport"/>
+  <link href="../_app/immutable/assets/0.uy2Fq64E.css" rel="stylesheet"/>
+  <link href="../_app/immutable/assets/14.CUiQRx3W.css" rel="stylesheet"/>
+  <link href="../_app/immutable/entry/start.DeGkUWpD.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/entry.B_cgZbs-.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/scheduler.CaqlsyK1.js" rel="modulepreload"/>
+  <link href="../_app/immutable/entry/app.zeLHmYJV.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/13.Ra4u4O7Y.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/index.B6TI4_Zl.js" rel="modulepreload"/>
+  <link href="../_app/immutable/nodes/0.ckPRERIZ.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/index.iXbarjOM.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/CopyButton.CumoJvrQ.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/copy.DZUZlfk6.js" rel="modulepreload"/>
+  <link href="../_app/immutable/nodes/14.C1MFHt_W.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/each.DM4g3a_t.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/MetaTags.BxA3G-ni.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/stores.CCdqwuXp.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/VersionDropdown.C2g0aReR.js" rel="modulepreload"/>
+  <link href="../_app/immutable/chunks/version.BqEZdzj3.js" rel="modulepreload"/>
+  <title>
+   Quickstart
+  </title>
+  <!-- HEAD_svelte-1a3766n_START -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+  <script async="" data-svelte-h="svelte-28fai2" src="https://www.googletagmanager.com/gtag/js?id=UA-156449732-1">
+  </script>
+  <script data-svelte-h="svelte-iepcrk">
+   window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+		gtag("config", "UA-156449732-1", {
+			cookie_flags: "samesite=none;secure"
+		});
+  </script>
+  <!-- HEAD_svelte-1a3766n_END -->
+  <!-- HEAD_svelte-dkutrw_START -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="A Step-by-Step Gradio Tutorial" name="description"/>
+  <meta content="Gradio Team" name="author"/>
+  <meta content="Quickstart" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="/guides/quickstart" property="og:url"/>
+  <meta content="A Step-by-Step Gradio Tutorial" property="og:description"/>
+  <meta content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@Gradio" name="twitter:creator"/>
+  <meta content="Quickstart" name="twitter:title"/>
+  <meta content="A Step-by-Step Gradio Tutorial." name="twitter:description"/>
+  <meta content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg" name="twitter:image"/>
+  <link href="/guides/quickstart" rel="canonical"/>
+  <!-- HEAD_svelte-dkutrw_END -->
+  <!-- HEAD_svelte-kspch6_START -->
+  <script src="https://gradio.s3-us-west-2.amazonaws.com/4.36.1/gradio.js" type="module">
+  </script>
+  <!-- HEAD_svelte-kspch6_END -->
+ </head>
+ <body data-sveltekit-preload-data="hover" style="min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto">
+  <div style="display: contents">
+   <div class="main-header flex-row">
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gradient-to-r from-white via-yellow-200 to-white px-6 py-2 sm:px-3.5 sm:before:flex-1 mx-auto" data-svelte-h="svelte-m604za">
+     <div class="flex flex-wrap items-center gap-x-4 gap-y-2 flex-grow">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mx-auto">
+       <p class="text-md leading-6 text-gray-700 text-center mx-auto">
+        <strong class="font-semibold">
+         Introducing Gradio Clients
+        </strong>
+       </p>
+       <a class="mx-auto flex-none rounded-full px-3.5 py-1 text-sm font-semibold text-white bg-gradient-to-br from-orange-300 via-orange-500 to-orange-300 hover:drop-shadow-md" href="https://www.youtube.com/watch?v=44vi31hehw4" target="_blank">
+        Watch
+        <span aria-hidden="true">
+         →
+        </span>
+       </a>
+      </div>
+     </div>
+     <div class="hidden justify-end flex-grow sm:flex">
+     </div>
+    </div>
+    <div class="container mx-auto flex flex-wrap justify-between flex-row relative items-center px-4 py-5 gap-6 text-lg z-50">
+     <a data-svelte-h="svelte-72mfco" href="/">
+      <img alt="Gradio logo" src="/_app/immutable/assets/gradio.CHB5adID.svg"/>
+     </a>
+     <svg class="h-8 w-8 lg:hidden" viewbox="-10 -10 20 20">
+      <rect height="2" width="14" x="-7" y="-6">
+      </rect>
+      <rect height="2" width="14" x="-7" y="-1">
+      </rect>
+      <rect height="2" width="14" x="-7" y="4">
+      </rect>
+     </svg>
+     <nav class="w-full flex-col gap-3 lg:flex lg:w-auto lg:flex-row lg:gap-8 hidden">
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-12q4mb7" href="/guides/quickstart">
+       <span>
+        ⚡
+       </span>
+       <span>
+        Quickstart
+       </span>
+      </a>
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-rj6sly" href="/docs">
+       <span>
+        ✍️
+       </span>
+       <span>
+        Docs
+       </span>
+      </a>
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-b4pfpk" href="/playground">
+       <span>
+        🎢
+       </span>
+       <span>
+        Playground
+       </span>
+      </a>
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-1wdzyuc" href="/custom-components/gallery">
+       <span>
+        🖼️
+       </span>
+       <span>
+        Custom Components
+        <sup class="text-orange-500">
+         NEW
+        </sup>
+       </span>
+      </a>
+      <div class="group relative flex cursor-pointer items-center gap-3">
+       <span data-svelte-h="svelte-v9wlbr">
+        🖐
+       </span>
+       <span data-svelte-h="svelte-1ufc5dh">
+        Community
+       </span>
+       <svg class="h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+        </path>
+       </svg>
+      </div>
+      <a class="thin-link flex items-center gap-3" data-svelte-h="svelte-14vdzms" href="https://github.com/gradio-app/gradio">
+       <img alt="Github logo" class="w-6" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2016.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20width='438.549px'%20height='438.549px'%20viewBox='0%200%20438.549%20438.549'%20style='enable-background:new%200%200%20438.549%20438.549;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365%20c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63%20c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996%20c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136%20c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559%20c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559%20c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997%20c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851%20c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136%20c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41%20c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126%20c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817%20c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994%20c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849%20c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24%20c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979%20c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146%20c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995%20c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906%20C438.536,184.851,428.728,148.168,409.132,114.573z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e"/>
+      </a>
+     </nav>
+    </div>
+   </div>
+   <div class="container mx-auto px-4 flex relative w-full">
+    <div class="side-navigation h-screen leading-relaxed sticky top-0 text-md overflow-y-auto overflow-x-hidden hidden lg:block rounded-t-xl bg-gradient-to-r from-white to-gray-50 lg:w-3/12">
+     <div class="sticky top-0 pr-2 float-right">
+      <select class="rounded-md border-gray-200 focus:placeholder-transparent focus:shadow-none focus:border-orange-500 focus:ring-0 text-xs mt-2 py-1 pl-2 pr-7 font-mono">
+       <option value="4.36.1">
+        4.36.1
+       </option>
+       <option value="main">
+        main
+       </option>
+      </select>
+     </div>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Getting Started
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden current-nav-link" href="../guides/quickstart/" style="max-width: 12rem">
+      Quickstart
+     </a>
+     <div class="navigation max-w-full bg-gradient-to-r from-orange-50 to-orange-100 p-2 mx-2 border-l-2 border-orange-500 mb-2">
+      <a class="subheading block thin-link -indent-2 ml-4 mr-2" href="#installation">
+       Installation
+      </a>
+      <a class="subheading block thin-link -indent-2 ml-4 mr-2" href="#building-your-first-demo">
+       Building Your First Demo
+      </a>
+      <a class="subheading block thin-link -indent-2 ml-4 mr-2" href="#sharing-your-demo">
+       Sharing Your Demo
+      </a>
+      <a class="subheading block thin-link -indent-2 ml-4 mr-2" href="#core-gradio-classes">
+       Core Gradio Classes
+      </a>
+      <a class="subheading block thin-link -indent-2 ml-4 mr-2" href="#chatbots-with-gr-chat-interface">
+       Chatbots with gr.ChatInterface
+      </a>
+      <a class="subheading block thin-link -indent-2 ml-4 mr-2" href="#custom-demos-with-gr-blocks">
+       Custom Demos with gr.Blocks
+      </a>
+      <a class="subheading block thin-link -indent-2 ml-4 mr-2" href="#the-gradio-python-and-java-script-ecosystem">
+       The Gradio Python &amp; JavaScript Ecosystem
+      </a>
+      <a class="subheading block thin-link -indent-2 ml-4 mr-2" href="#whats-next">
+       What's Next?
+      </a>
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/key-features/" style="max-width: 12rem">
+      Key Features
+     </a>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Building Interfaces
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/the-interface-class/" style="max-width: 12rem">
+      The Interface Class
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/more-on-examples/" style="max-width: 12rem">
+      More On Examples
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/flagging/" style="max-width: 12rem">
+      Flagging
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/interface-state/" style="max-width: 12rem">
+      Interface State
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/reactive-interfaces/" style="max-width: 12rem">
+      Reactive Interfaces
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/four-kinds-of-interfaces/" style="max-width: 12rem">
+      Four Kinds Of Interfaces
+     </a>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Additional Features
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/queuing/" style="max-width: 12rem">
+      Queuing
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/streaming-outputs/" style="max-width: 12rem">
+      Streaming Outputs
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/alerts/" style="max-width: 12rem">
+      Alerts
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/styling/" style="max-width: 12rem">
+      Styling
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/progress_bars/" style="max-width: 12rem">
+      Progress_bars
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/batch-functions/" style="max-width: 12rem">
+      Batch Functions
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/sharing-your-app/" style="max-width: 12rem">
+      Sharing Your App
+     </a>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Building With Blocks
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/blocks-and-event-listeners/" style="max-width: 12rem">
+      Blocks And Event Listeners
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/controlling-layout/" style="max-width: 12rem">
+      Controlling Layout
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/state-in-blocks/" style="max-width: 12rem">
+      State In Blocks
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/dynamic-apps-with-render-decorator/" style="max-width: 12rem">
+      Dynamic Apps With Render Decorator
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/custom-CSS-and-JS/" style="max-width: 12rem">
+      Custom CSS And JS
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/using-blocks-like-functions/" style="max-width: 12rem">
+      Using Blocks Like Functions
+     </a>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Chatbots
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/creating-a-chatbot-fast/" style="max-width: 12rem">
+      Creating A Chatbot Fast
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/creating-a-custom-chatbot-with-blocks/" style="max-width: 12rem">
+      Creating A Custom Chatbot With Blocks
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/creating-a-discord-bot-from-a-gradio-app/" style="max-width: 12rem">
+      Creating A Discord Bot From A Gradio App
+     </a>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Custom Components
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/custom-components-in-five-minutes/" style="max-width: 12rem">
+      Custom Components In Five Minutes
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/key-component-concepts/" style="max-width: 12rem">
+      Key Component Concepts
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/configuration/" style="max-width: 12rem">
+      Configuration
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/backend/" style="max-width: 12rem">
+      Backend
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/frontend/" style="max-width: 12rem">
+      Frontend
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/frequently-asked-questions/" style="max-width: 12rem">
+      Frequently Asked Questions
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/pdf-component-example/" style="max-width: 12rem">
+      Pdf Component Example
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/multimodal-chatbot-part1/" style="max-width: 12rem">
+      Multimodal Chatbot Part1
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/documenting-custom-components/" style="max-width: 12rem">
+      Documenting Custom Components
+     </a>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Tabular Data Science And Plots
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/connecting-to-a-database/" style="max-width: 12rem">
+      Connecting To A Database
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/creating-a-dashboard-from-bigquery-data/" style="max-width: 12rem">
+      Creating A Dashboard From Bigquery Data
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/creating-a-dashboard-from-supabase-data/" style="max-width: 12rem">
+      Creating A Dashboard From Supabase Data
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/creating-a-realtime-dashboard-from-google-sheets/" style="max-width: 12rem">
+      Creating A Realtime Dashboard From Google Sheets
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/plot-component-for-maps/" style="max-width: 12rem">
+      Plot Component For Maps
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/styling-the-gradio-dataframe/" style="max-width: 12rem">
+      Styling The Gradio Dataframe
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/using-gradio-for-tabular-workflows/" style="max-width: 12rem">
+      Using Gradio For Tabular Workflows
+     </a>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Gradio Clients And Lite
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/getting-started-with-the-python-client/" style="max-width: 12rem">
+      Getting Started With The Python Client
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/getting-started-with-the-js-client/" style="max-width: 12rem">
+      Getting Started With The Js Client
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/querying-gradio-apps-with-curl/" style="max-width: 12rem">
+      Querying Gradio Apps With Curl
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/gradio-and-llm-agents/" style="max-width: 12rem">
+      Gradio And Llm Agents
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/gradio-lite/" style="max-width: 12rem">
+      Gradio Lite
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/gradio-lite-and-transformers-js/" style="max-width: 12rem">
+      Gradio Lite And Transformers Js
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden" href="../guides/fastapi-app-with-the-gradio-client/" style="max-width: 12rem">
+      Fastapi App With The Gradio Client
+     </a>
+     <div class="category-link my-2 font-semibold px-4 pt-2 text-ellipsis block" style="max-width: 12rem">
+      Other Tutorials
+      <button class="block show-guides" data-svelte-h="svelte-12qobwr">
+       [ show ]
+      </button>
+     </div>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/using-hugging-face-integrations/" style="max-width: 12rem">
+      Using Hugging Face Integrations
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/Gradio-and-Comet/" style="max-width: 12rem">
+      Gradio And Comet
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/Gradio-and-ONNX-on-Hugging-Face/" style="max-width: 12rem">
+      Gradio And ONNX On Hugging Face
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/Gradio-and-Wandb-Integration/" style="max-width: 12rem">
+      Gradio And Wandb Integration
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/create-your-own-friends-with-a-gan/" style="max-width: 12rem">
+      Create Your Own Friends With A Gan
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/deploying-gradio-with-docker/" style="max-width: 12rem">
+      Deploying Gradio With Docker
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/developing-faster-with-reload-mode/" style="max-width: 12rem">
+      Developing Faster With Reload Mode
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/how-to-use-3D-model-component/" style="max-width: 12rem">
+      How To Use 3D Model Component
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/image-classification-in-pytorch/" style="max-width: 12rem">
+      Image Classification In Pytorch
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/image-classification-in-tensorflow/" style="max-width: 12rem">
+      Image Classification In Tensorflow
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/image-classification-with-vision-transformers/" style="max-width: 12rem">
+      Image Classification With Vision Transformers
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/installing-gradio-in-a-virtual-environment/" style="max-width: 12rem">
+      Installing Gradio In A Virtual Environment
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/named-entity-recognition/" style="max-width: 12rem">
+      Named Entity Recognition
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/real-time-speech-recognition/" style="max-width: 12rem">
+      Real Time Speech Recognition
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/running-background-tasks/" style="max-width: 12rem">
+      Running Background Tasks
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/running-gradio-on-your-web-server-with-nginx/" style="max-width: 12rem">
+      Running Gradio On Your Web Server With Nginx
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/setting-up-a-demo-for-maximum-performance/" style="max-width: 12rem">
+      Setting Up A Demo For Maximum Performance
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/theming-guide/" style="max-width: 12rem">
+      Theming Guide
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/using-flagging/" style="max-width: 12rem">
+      Using Flagging
+     </a>
+     <a class="guide-link -indent-2 ml-2 thin-link px-4 block overflow-hidden hidden" href="../guides/wrapping-layouts/" style="max-width: 12rem">
+      Wrapping Layouts
+     </a>
+    </div>
+    <div class="w-full lg:w-8/12 mx-auto">
+     <div class="w-full flex justify-between my-4">
+      <div>
+      </div>
+      <a class="text-right px-4 py-1 bg-gray-50 rounded-full max-w-1/2 hover:underline max-w-[48%]" href="../guides/key-features/">
+       <div class="flex text-lg">
+        <p class="whitespace-nowrap overflow-hidden text-ellipsis">
+         Key Features
+        </p>
+        <span class="text-orange-500 ml-1" data-svelte-h="svelte-2o9is0">
+         →
+        </span>
+       </div>
+      </a>
+     </div>
+     <div class="prose text-lg max-w-full">
+      <!-- HTML_TAG_START -->
+      <h1>
+       Quickstart
+      </h1>
+      <p>
+       Gradio is an open-source Python package that allows you to quickly
+       <strong>
+        build
+       </strong>
+       a demo or web application for your machine learning model, API, or any arbitary Python function. You can then
+       <strong>
+        share
+       </strong>
+       a link to your demo or web application in just a few seconds using Gradio's built-in sharing features.
+       <em>
+        No JavaScript, CSS, or web hosting experience needed!
+       </em>
+      </p>
+      <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/gradio-guides/lcm-screenshot-3.gif" style="padding-bottom: 10px"/>
+      <p>
+       It just takes a few lines of Python to create a demo like the one above, so let's get started 💫
+      </p>
+      <h2 class="group" id="installation">
+       Installation
+       <a class="invisible group-hover-visible" href="#installation">
+        <img class="anchor-img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       </a>
+      </h2>
+      <p>
+       <strong>
+        Prerequisite
+       </strong>
+       : Gradio requires
+       <a href="https://www.python.org/downloads/" rel="nofollow">
+        Python 3.8 or higher
+       </a>
+      </p>
+      <p>
+       We recommend installing Gradio using
+       <code>
+        pip
+       </code>
+       , which is included by default in Python. Run this in your terminal or command prompt:
+      </p>
+      <div class="codeblock">
+       <pre class="language-bash"><code class="language-bash">pip <span class="token function">install</span> gradio</code></pre>
+      </div>
+      <p class="tip">
+       <strong>
+        ✍️ Tip:
+       </strong>
+       it is best to install Gradio in a virtual environment. Detailed installation instructions for all common operating systems
+       <a href="https://www.gradio.app/main/guides/installing-gradio-in-a-virtual-environment">
+        are provided here
+       </a>
+       .
+      </p>
+      <h2 class="group" id="building-your-first-demo">
+       Building Your First Demo
+       <a class="invisible group-hover-visible" href="#building-your-first-demo">
+        <img class="anchor-img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       </a>
+      </h2>
+      <p>
+       You can run Gradio in your favorite code editor, Jupyter notebook, Google Colab, or anywhere else you write Python. Let's write your first Gradio app:
+      </p>
+      <div class="codeblock">
+       <pre class="language-python"><code class="language-python"><span class="token keyword">import</span> gradio <span class="token keyword">as</span> gr
+
+<span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> intensity<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">"Hello, "</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">"!"</span> <span class="token operator">*</span> <span class="token builtin">int</span><span class="token punctuation">(</span>intensity<span class="token punctuation">)</span>
+
+demo <span class="token operator">=</span> gr<span class="token punctuation">.</span>Interface<span class="token punctuation">(</span>
+    fn<span class="token operator">=</span>greet<span class="token punctuation">,</span>
+    inputs<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"text"</span><span class="token punctuation">,</span> <span class="token string">"slider"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    outputs<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"text"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+
+demo<span class="token punctuation">.</span>launch<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+      </div>
+      <p class="tip">
+       <strong>
+        ✍️ Tip:
+       </strong>
+       We shorten the imported name from
+       <code>
+        gradio
+       </code>
+       to
+       <code>
+        gr
+       </code>
+       for better readability of code. This is a widely adopted convention that you should follow so that anyone working with your code can easily understand it.
+      </p>
+      <p>
+       Now, run your code. If you've written the Python code in a file named, for example,
+       <code>
+        app.py
+       </code>
+       , then you would run
+       <code>
+        python app.py
+       </code>
+       from the terminal.
+      </p>
+      <p>
+       The demo below will open in a browser on
+       <a href="http://localhost:7860" rel="nofollow">
+        http://localhost:7860
+       </a>
+       if running from a file. If you are running within a notebook, the demo will appear embedded within the notebook.
+      </p>
+      <p>
+       <gradio-app space="gradio/hello_world_4">
+       </gradio-app>
+      </p>
+      <p>
+       Type your name in the textbox on the left, drag the slider, and then press the Submit button. You should see a friendly greeting on the right.
+       <p class="tip">
+        <strong>
+         ✍️ Tip:
+        </strong>
+        When developing locally, you can run your Gradio app in
+        <strong>
+         hot reload mode
+        </strong>
+        , which automatically reloads the Gradio app whenever you make changes to the file. To do this, simply type in
+        <code>
+         gradio
+        </code>
+        before the name of the file instead of
+        <code>
+         python
+        </code>
+        . In the example above, you would type:
+        <code>
+         gradio app.py
+        </code>
+        in your terminal. Learn more about hot reloading in the
+        <a href="https://www.gradio.app/guides/developing-faster-with-reload-mode">
+         Hot Reloading Guide
+        </a>
+        .
+       </p>
+      </p>
+      <p>
+       <strong>
+        Understanding the
+        <code>
+         Interface
+        </code>
+        Class
+       </strong>
+      </p>
+      <p>
+       You'll notice that in order to make your first demo, you created an instance of the
+       <code>
+        gr.Interface
+       </code>
+       class. The
+       <code>
+        Interface
+       </code>
+       class is designed to create demos for machine learning models which accept one or more inputs, and return one or more outputs.
+      </p>
+      <p>
+       The
+       <code>
+        Interface
+       </code>
+       class has three core arguments:
+      </p>
+      <ul>
+       <li>
+        <code>
+         fn
+        </code>
+        : the function to wrap a user interface (UI) around
+       </li>
+       <li>
+        <code>
+         inputs
+        </code>
+        : the Gradio component(s) to use for the input. The number of components should match the number of arguments in your function.
+       </li>
+       <li>
+        <code>
+         outputs
+        </code>
+        : the Gradio component(s) to use for the output. The number of components should match the number of return values from your function.
+       </li>
+      </ul>
+      <p>
+       The
+       <code>
+        fn
+       </code>
+       argument is very flexible -- you can pass
+       <em>
+        any
+       </em>
+       Python function that you want to wrap with a UI. In the example above, we saw a relatively simple function, but the function could be anything from a music generator to a tax calculator to the prediction function of a pretrained machine learning model.
+      </p>
+      <p>
+       The
+       <code>
+        inputs
+       </code>
+       and
+       <code>
+        outputs
+       </code>
+       arguments take one or more Gradio components. As we'll see, Gradio includes more than
+       <a href="https://www.gradio.app/docs/gradio/components" rel="nofollow">
+        30 built-in components
+       </a>
+       (such as the
+       <code>
+        gr.Textbox()
+       </code>
+       ,
+       <code>
+        gr.Image()
+       </code>
+       , and
+       <code>
+        gr.HTML()
+       </code>
+       components) that are designed for machine learning applications.
+       <p class="tip">
+        <strong>
+         ✍️ Tip:
+        </strong>
+        For the
+        <code>
+         inputs
+        </code>
+        and
+        <code>
+         outputs
+        </code>
+        arguments, you can pass in the name of these components as a string (
+        <code>
+         "textbox"
+        </code>
+        ) or an instance of the class (
+        <code>
+         gr.Textbox()
+        </code>
+        ).
+       </p>
+      </p>
+      <p>
+       If your function accepts more than one argument, as is the case above, pass a list of input components to
+       <code>
+        inputs
+       </code>
+       , with each input component corresponding to one of the arguments of the function, in order. The same holds true if your function returns more than one value: simply pass in a list of components to
+       <code>
+        outputs
+       </code>
+       . This flexibility makes the
+       <code>
+        Interface
+       </code>
+       class a very powerful way to create demos.
+      </p>
+      <p>
+       We'll dive deeper into the
+       <code>
+        gr.Interface
+       </code>
+       on our series on
+       <a href="https://www.gradio.app/main/guides/the-interface-class" rel="nofollow">
+        building Interfaces
+       </a>
+       .
+      </p>
+      <h2 class="group" id="sharing-your-demo">
+       Sharing Your Demo
+       <a class="invisible group-hover-visible" href="#sharing-your-demo">
+        <img class="anchor-img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       </a>
+      </h2>
+      <p>
+       What good is a beautiful demo if you can't share it? Gradio lets you easily share a machine learning demo without having to worry about the hassle of hosting on a web server. Simply set
+       <code>
+        share=True
+       </code>
+       in
+       <code>
+        launch()
+       </code>
+       , and a publicly accessible URL will be created for your demo. Let's revisit our example demo,  but change the last line as follows:
+      </p>
+      <div class="codeblock">
+       <pre class="language-python"><code class="language-python"><span class="token keyword">import</span> gradio <span class="token keyword">as</span> gr
+
+<span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">"Hello "</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">"!"</span>
+
+demo <span class="token operator">=</span> gr<span class="token punctuation">.</span>Interface<span class="token punctuation">(</span>fn<span class="token operator">=</span>greet<span class="token punctuation">,</span> inputs<span class="token operator">=</span><span class="token string">"textbox"</span><span class="token punctuation">,</span> outputs<span class="token operator">=</span><span class="token string">"textbox"</span><span class="token punctuation">)</span>
+    
+demo<span class="token punctuation">.</span>launch<span class="token punctuation">(</span>share<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>  <span class="token comment"># Share your demo with just 1 extra parameter 🚀</span></code></pre>
+      </div>
+      <p>
+       When you run this code, a public URL will be generated for your demo in a matter of seconds, something like:
+      </p>
+      <p>
+       👉
+       <code>
+        https://a23dsf231adb.gradio.live
+       </code>
+      </p>
+      <p>
+       Now, anyone around the world can try your Gradio demo from their browser, while the machine learning model and all computation continues to run locally on your computer.
+      </p>
+      <p>
+       To learn more about sharing your demo, read our dedicated guide on
+       <a href="https://www.gradio.app/guides/sharing-your-app" rel="nofollow">
+        sharing your Gradio application
+       </a>
+       .
+      </p>
+      <h2 class="group" id="core-gradio-classes">
+       Core Gradio Classes
+       <a class="invisible group-hover-visible" href="#core-gradio-classes">
+        <img class="anchor-img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       </a>
+      </h2>
+      <p>
+       So far, we've been discussing the
+       <code>
+        Interface
+       </code>
+       class, which is a high-level class that lets to build demos quickly with Gradio. But what else does Gradio include?aaa
+      </p>
+      <h3 class="group" id="chatbots-with-gr-chat-interface">
+       Chatbots with
+       <code>
+        gr.ChatInterface
+       </code>
+       <a class="invisible group-hover-visible" href="#chatbots-with-gr-chat-interface">
+        <img class="anchor-img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       </a>
+      </h3>
+      <p>
+       Gradio includes another high-level class,
+       <code>
+        gr.ChatInterface
+       </code>
+       , which is specifically designed to create Chatbot UIs. Similar to
+       <code>
+        Interface
+       </code>
+       , you supply a function and Gradio creates a fully working Chatbot UI. If you're interested in creating a chatbot, you can jump straight to
+       <a href="https://www.gradio.app/guides/creating-a-chatbot-fast" rel="nofollow">
+        our dedicated guide on
+        <code>
+         gr.ChatInterface
+        </code>
+       </a>
+       .
+      </p>
+      <h3 class="group" id="custom-demos-with-gr-blocks">
+       Custom Demos with
+       <code>
+        gr.Blocks
+       </code>
+       <a class="invisible group-hover-visible" href="#custom-demos-with-gr-blocks">
+        <img class="anchor-img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       </a>
+      </h3>
+      <p>
+       Gradio also offers a low-level approach for designing web apps with more flexible layouts and data flows with the
+       <code>
+        gr.Blocks
+       </code>
+       class. Blocks allows you to do things like control where components appear on the page, handle complex data flows (e.g. outputs can serve as inputs to other functions), and update properties/visibility of components based on user interaction — still all in Python.
+      </p>
+      <p>
+       You can build very custom and complex applications using
+       <code>
+        gr.Blocks()
+       </code>
+       . For example, the popular image generation
+       <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" rel="nofollow">
+        Automatic1111 Web UI
+       </a>
+       is built using Gradio Blocks. We dive deeper into the
+       <code>
+        gr.Blocks
+       </code>
+       on our series on
+       <a href="https://www.gradio.app/guides/blocks-and-event-listeners" rel="nofollow">
+        building with Blocks
+       </a>
+       .
+      </p>
+      <h3 class="group" id="the-gradio-python-and-java-script-ecosystem">
+       The Gradio Python &amp; JavaScript Ecosystem
+       <a class="invisible group-hover-visible" href="#the-gradio-python-and-java-script-ecosystem">
+        <img class="anchor-img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       </a>
+      </h3>
+      <p>
+       That's the gist of the core
+       <code>
+        gradio
+       </code>
+       Python library, but Gradio is actually so much more! Its an entire ecosystem of Python and JavaScript libraries that let you build machine learning applications, or query them programmatically, in Python or JavaScript. Here are other related parts of the Gradio ecosystem:
+      </p>
+      <ul>
+       <li>
+        <a href="https://www.gradio.app/guides/getting-started-with-the-python-client" rel="nofollow">
+         Gradio Python Client
+        </a>
+        (
+        <code>
+         gradio_client
+        </code>
+        ): query any Gradio app programmatically in Python.
+       </li>
+       <li>
+        <a href="https://www.gradio.app/guides/getting-started-with-the-js-client" rel="nofollow">
+         Gradio JavaScript Client
+        </a>
+        (
+        <code>
+         @gradio/client
+        </code>
+        ): query any Gradio app programmatically in JavaScript.
+       </li>
+       <li>
+        <a href="https://www.gradio.app/guides/gradio-lite" rel="nofollow">
+         Gradio-Lite
+        </a>
+        (
+        <code>
+         @gradio/lite
+        </code>
+        ): write Gradio apps in Python that run entirely in the browser (no server needed!), thanks to Pyodide.
+       </li>
+       <li>
+        <a href="https://huggingface.co/spaces" rel="nofollow">
+         Hugging Face Spaces
+        </a>
+        : the most popular place to host Gradio applications — for free!
+       </li>
+      </ul>
+      <h2 class="group" id="whats-next">
+       What's Next?
+       <a class="invisible group-hover-visible" href="#whats-next">
+        <img class="anchor-img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e"/>
+       </a>
+      </h2>
+      <p>
+       Keep learning about Gradio sequentially using the Gradio Guides, which include explanations as well as example code and embedded interactive demos. Next up:
+       <a href="https://www.gradio.app/guides/the-interface-class" rel="nofollow">
+        let's dive deeper into the Interface class
+       </a>
+       .
+      </p>
+      <p>
+       Or, if you already know the basics and are looking for something specific, you can search the more
+       <a href="https://www.gradio.app/docs/" rel="nofollow">
+        technical API documentation
+       </a>
+       .
+      </p>
+      <!-- HTML_TAG_END -->
+     </div>
+     <div class="w-full flex justify-between my-4">
+      <div>
+      </div>
+      <a class="text-right px-4 py-1 bg-gray-50 rounded-full max-w-1/2 hover:underline max-w-[48%]" href="../guides/key-features/">
+       <div class="flex text-lg">
+        <p class="whitespace-nowrap overflow-hidden text-ellipsis">
+         Key Features
+        </p>
+        <span class="text-orange-500 ml-1" data-svelte-h="svelte-2o9is0">
+         →
+        </span>
+       </div>
+      </a>
+     </div>
+    </div>
+   </div>
+   <footer class="main-footer container mx-auto flex-row flex items-center px-4 py-6 justify-between" data-svelte-h="svelte-rbo7yn">
+    <a href="/">
+     <img alt="Gradio logo" src="/_app/immutable/assets/gradio.CHB5adID.svg"/>
+    </a>
+    <div class="flex gap-3">
+     <a class="text-gray-400 hover:text-gray-500" href="https://status.gradio.app" target="_blank">
+      <span>
+       Status
+      </span>
+     </a>
+     <a class="hover:opacity-75 transition" href="https://twitter.com/Gradio">
+      <img alt="Twitter logo" class="w-6" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20stroke='currentColor'%20fill='gray'%20height='32'%20width='32'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M389.2%2048h70.6L305.6%20224.2%20487%20464H345L233.7%20318.6%20106.5%20464H35.8L200.7%20275.5%2026.8%2048H172.4L272.9%20180.9%20389.2%2048zM364.4%20421.8h39.1L151.1%2088h-42L364.4%20421.8z'/%3e%3c/svg%3e"/>
+     </a>
+     <a class="hover:opacity-75 transition" href="https://github.com/gradio-app/gradio">
+      <img alt="Github logo" class="w-6" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2016.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20width='438.549px'%20height='438.549px'%20viewBox='0%200%20438.549%20438.549'%20style='enable-background:new%200%200%20438.549%20438.549;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20fill='gray'%20d='M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365%20c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63%20c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996%20c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136%20c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559%20c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559%20c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997%20c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851%20c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136%20c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41%20c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126%20c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817%20c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994%20c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849%20c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24%20c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979%20c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146%20c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995%20c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906%20C438.536,184.851,428.728,148.168,409.132,114.573z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e"/>
+     </a>
+    </div>
+   </footer>
+   <script>
+    {
+					__sveltekit_ypyqu1 = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":null,"uses":{"url":1}},{"type":"data","data":{guide:{name:"quickstart",category:"getting-started",pretty_category:"Getting Started",guide_index:1,absolute_index:0,pretty_name:"Quickstart",content:"# Quickstart\n\nGradio is an open-source Python package that allows you to quickly **build** a demo or web application for your machine learning model, API, or any arbitary Python function. You can then **share** a link to your demo or web application in just a few seconds using Gradio's built-in sharing features. *No JavaScript, CSS, or web hosting experience needed!*\n\n\u003Cimg src=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/gradio-guides/lcm-screenshot-3.gif\" style=\"padding-bottom: 10px\">\n\nIt just takes a few lines of Python to create a demo like the one above, so let's get started 💫\n\n## Installation\n\n**Prerequisite**: Gradio requires [Python 3.8 or higher](https://www.python.org/downloads/)\n\n\nWe recommend installing Gradio using `pip`, which is included by default in Python. Run this in your terminal or command prompt:\n\n```bash\npip install gradio\n```\n\u003Cp class='tip'>\u003Cstrong>✍️ Tip:\u003C/strong> it is best to install Gradio in a virtual environment. Detailed installation instructions for all common operating systems \u003Ca href=\"https://www.gradio.app/main/guides/installing-gradio-in-a-virtual-environment\">are provided here\u003C/a>. \u003C/p>\n\n## Building Your First Demo\n\nYou can run Gradio in your favorite code editor, Jupyter notebook, Google Colab, or anywhere else you write Python. Let's write your first Gradio app:\n\n\n```python\nimport gradio as gr\n\ndef greet(name, intensity):\n    return \"Hello, \" + name + \"!\" * int(intensity)\n\ndemo = gr.Interface(\n    fn=greet,\n    inputs=[\"text\", \"slider\"],\n    outputs=[\"text\"],\n)\n\ndemo.launch()\n\n```\n\u003Cp class='tip'>\u003Cstrong>✍️ Tip:\u003C/strong> We shorten the imported name from \u003Ccode>gradio\u003C/code> to \u003Ccode>gr\u003C/code> for better readability of code. This is a widely adopted convention that you should follow so that anyone working with your code can easily understand it. \u003C/p>\n\nNow, run your code. If you've written the Python code in a file named, for example, `app.py`, then you would run `python app.py` from the terminal.\n\nThe demo below will open in a browser on [http://localhost:7860](http://localhost:7860) if running from a file. If you are running within a notebook, the demo will appear embedded within the notebook.\n\n\u003Cgradio-app space='gradio/hello_world_4'>\u003C/gradio-app>\n\nType your name in the textbox on the left, drag the slider, and then press the Submit button. You should see a friendly greeting on the right.\u003Cp class='tip'>\u003Cstrong>✍️ Tip:\u003C/strong> When developing locally, you can run your Gradio app in \u003Cstrong>hot reload mode\u003C/strong>, which automatically reloads the Gradio app whenever you make changes to the file. To do this, simply type in \u003Ccode>gradio\u003C/code> before the name of the file instead of \u003Ccode>python\u003C/code>. In the example above, you would type: `gradio app.py` in your terminal. Learn more about hot reloading in the \u003Ca href=\"https://www.gradio.app/guides/developing-faster-with-reload-mode\">Hot Reloading Guide\u003C/a>.\u003C/p>\n\n\n**Understanding the `Interface` Class**\n\nYou'll notice that in order to make your first demo, you created an instance of the `gr.Interface` class. The `Interface` class is designed to create demos for machine learning models which accept one or more inputs, and return one or more outputs. \n\nThe `Interface` class has three core arguments:\n\n- `fn`: the function to wrap a user interface (UI) around\n- `inputs`: the Gradio component(s) to use for the input. The number of components should match the number of arguments in your function.\n- `outputs`: the Gradio component(s) to use for the output. The number of components should match the number of return values from your function.\n\nThe `fn` argument is very flexible -- you can pass *any* Python function that you want to wrap with a UI. In the example above, we saw a relatively simple function, but the function could be anything from a music generator to a tax calculator to the prediction function of a pretrained machine learning model.\n\nThe `inputs` and `outputs` arguments take one or more Gradio components. As we'll see, Gradio includes more than [30 built-in components](https://www.gradio.app/docs/gradio/components) (such as the `gr.Textbox()`, `gr.Image()`, and `gr.HTML()` components) that are designed for machine learning applications. \u003Cp class='tip'>\u003Cstrong>✍️ Tip:\u003C/strong> For the `inputs` and `outputs` arguments, you can pass in the name of these components as a string (`\"textbox\"`) or an instance of the class (`gr.Textbox()`).\u003C/p>\n\nIf your function accepts more than one argument, as is the case above, pass a list of input components to `inputs`, with each input component corresponding to one of the arguments of the function, in order. The same holds true if your function returns more than one value: simply pass in a list of components to `outputs`. This flexibility makes the `Interface` class a very powerful way to create demos.\n\nWe'll dive deeper into the `gr.Interface` on our series on [building Interfaces](https://www.gradio.app/main/guides/the-interface-class).\n\n## Sharing Your Demo\n\nWhat good is a beautiful demo if you can't share it? Gradio lets you easily share a machine learning demo without having to worry about the hassle of hosting on a web server. Simply set `share=True` in `launch()`, and a publicly accessible URL will be created for your demo. Let's revisit our example demo,  but change the last line as follows:\n\n```python\nimport gradio as gr\n\ndef greet(name):\n    return \"Hello \" + name + \"!\"\n\ndemo = gr.Interface(fn=greet, inputs=\"textbox\", outputs=\"textbox\")\n    \ndemo.launch(share=True)  # Share your demo with just 1 extra parameter 🚀\n```\n\nWhen you run this code, a public URL will be generated for your demo in a matter of seconds, something like:\n\n👉 &nbsp; `https://a23dsf231adb.gradio.live`\n\nNow, anyone around the world can try your Gradio demo from their browser, while the machine learning model and all computation continues to run locally on your computer.\n\nTo learn more about sharing your demo, read our dedicated guide on [sharing your Gradio application](https://www.gradio.app/guides/sharing-your-app).\n\n\n## Core Gradio Classes\n\nSo far, we've been discussing the `Interface` class, which is a high-level class that lets to build demos quickly with Gradio. But what else does Gradio include?aaa\n\n### Chatbots with `gr.ChatInterface`\n\nGradio includes another high-level class, `gr.ChatInterface`, which is specifically designed to create Chatbot UIs. Similar to `Interface`, you supply a function and Gradio creates a fully working Chatbot UI. If you're interested in creating a chatbot, you can jump straight to [our dedicated guide on `gr.ChatInterface`](https://www.gradio.app/guides/creating-a-chatbot-fast).\n\n### Custom Demos with `gr.Blocks`\n\nGradio also offers a low-level approach for designing web apps with more flexible layouts and data flows with the `gr.Blocks` class. Blocks allows you to do things like control where components appear on the page, handle complex data flows (e.g. outputs can serve as inputs to other functions), and update properties/visibility of components based on user interaction — still all in Python. \n\nYou can build very custom and complex applications using `gr.Blocks()`. For example, the popular image generation [Automatic1111 Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) is built using Gradio Blocks. We dive deeper into the `gr.Blocks` on our series on [building with Blocks](https://www.gradio.app/guides/blocks-and-event-listeners).\n\n\n### The Gradio Python & JavaScript Ecosystem\n\nThat's the gist of the core `gradio` Python library, but Gradio is actually so much more! Its an entire ecosystem of Python and JavaScript libraries that let you build machine learning applications, or query them programmatically, in Python or JavaScript. Here are other related parts of the Gradio ecosystem:\n\n* [Gradio Python Client](https://www.gradio.app/guides/getting-started-with-the-python-client) (`gradio_client`): query any Gradio app programmatically in Python.\n* [Gradio JavaScript Client](https://www.gradio.app/guides/getting-started-with-the-js-client) (`@gradio/client`): query any Gradio app programmatically in JavaScript.\n* [Gradio-Lite](https://www.gradio.app/guides/gradio-lite) (`@gradio/lite`): write Gradio apps in Python that run entirely in the browser (no server needed!), thanks to Pyodide. \n* [Hugging Face Spaces](https://huggingface.co/spaces): the most popular place to host Gradio applications — for free!\n\n## What's Next?\n\nKeep learning about Gradio sequentially using the Gradio Guides, which include explanations as well as example code and embedded interactive demos. Next up: [let's dive deeper into the Interface class](https://www.gradio.app/guides/the-interface-class).\n\nOr, if you already know the basics and are looking for something specific, you can search the more [technical API documentation](https://www.gradio.app/docs/).\n\n\n",tags:[],spaces:[],url:"/guides/quickstart/",contributor:null,new_html:"\n\u003Ch1>Quickstart\u003C/h1>\n\u003Cp>Gradio is an open-source Python package that allows you to quickly \u003Cstrong>build\u003C/strong> a demo or web application for your machine learning model, API, or any arbitary Python function. You can then \u003Cstrong>share\u003C/strong> a link to your demo or web application in just a few seconds using Gradio's built-in sharing features. \u003Cem>No JavaScript, CSS, or web hosting experience needed!\u003C/em>\u003C/p>\n\u003Cimg src=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/gradio-guides/lcm-screenshot-3.gif\" style=\"padding-bottom: 10px\">\n\u003Cp>It just takes a few lines of Python to create a demo like the one above, so let's get started 💫\u003C/p>\n\u003Ch2 class=\"group\" id=\"installation\">Installation\u003Ca href=\"#installation\" class=\"invisible group-hover-visible\">\u003Cimg\n  src=\"data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e\"\n  class=\"anchor-img\"\n>\u003C/a>\u003C/h2>\n\u003Cp>\u003Cstrong>Prerequisite\u003C/strong>: Gradio requires \u003Ca\n  href=\"https://www.python.org/downloads/\"\n  rel=\"nofollow\"\n>Python 3.8 or higher\u003C/a>\u003C/p>\n\u003Cp>We recommend installing Gradio using \u003Ccode>pip\u003C/code>, which is included by default in Python. Run this in your terminal or command prompt:\u003C/p>\n\u003Cdiv class=\"codeblock\">\u003Cpre class=\"language-bash\">\u003Ccode class=\"language-bash\">pip \u003Cspan class=\"token function\">install\u003C/span> gradio\u003C/code>\u003C/pre>\u003C/div>\n\u003Cp class='tip'>\u003Cstrong>✍️ Tip:\u003C/strong> it is best to install Gradio in a virtual environment. Detailed installation instructions for all common operating systems \u003Ca href=\"https://www.gradio.app/main/guides/installing-gradio-in-a-virtual-environment\">are provided here\u003C/a>. \u003C/p>\n\u003Ch2 class=\"group\" id=\"building-your-first-demo\">Building Your First Demo\u003Ca\n  href=\"#building-your-first-demo\"\n  class=\"invisible group-hover-visible\"\n>\u003Cimg\n  src=\"data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e\"\n  class=\"anchor-img\"\n>\u003C/a>\u003C/h2>\n\u003Cp>You can run Gradio in your favorite code editor, Jupyter notebook, Google Colab, or anywhere else you write Python. Let's write your first Gradio app:\u003C/p>\n\u003Cdiv class=\"codeblock\">\u003Cpre class=\"language-python\">\u003Ccode class=\"language-python\">\u003Cspan class=\"token keyword\">import\u003C/span> gradio \u003Cspan class=\"token keyword\">as\u003C/span> gr\n\n\u003Cspan class=\"token keyword\">def\u003C/span> \u003Cspan class=\"token function\">greet\u003C/span>\u003Cspan class=\"token punctuation\">(\u003C/span>name\u003Cspan class=\"token punctuation\">,\u003C/span> intensity\u003Cspan class=\"token punctuation\">)\u003C/span>\u003Cspan class=\"token punctuation\">:\u003C/span>\n    \u003Cspan class=\"token keyword\">return\u003C/span> \u003Cspan class=\"token string\">\"Hello, \"\u003C/span> \u003Cspan class=\"token operator\">+\u003C/span> name \u003Cspan class=\"token operator\">+\u003C/span> \u003Cspan class=\"token string\">\"!\"\u003C/span> \u003Cspan class=\"token operator\">*\u003C/span> \u003Cspan class=\"token builtin\">int\u003C/span>\u003Cspan class=\"token punctuation\">(\u003C/span>intensity\u003Cspan class=\"token punctuation\">)\u003C/span>\n\ndemo \u003Cspan class=\"token operator\">=\u003C/span> gr\u003Cspan class=\"token punctuation\">.\u003C/span>Interface\u003Cspan class=\"token punctuation\">(\u003C/span>\n    fn\u003Cspan class=\"token operator\">=\u003C/span>greet\u003Cspan class=\"token punctuation\">,\u003C/span>\n    inputs\u003Cspan class=\"token operator\">=\u003C/span>\u003Cspan class=\"token punctuation\">[\u003C/span>\u003Cspan class=\"token string\">\"text\"\u003C/span>\u003Cspan class=\"token punctuation\">,\u003C/span> \u003Cspan class=\"token string\">\"slider\"\u003C/span>\u003Cspan class=\"token punctuation\">]\u003C/span>\u003Cspan class=\"token punctuation\">,\u003C/span>\n    outputs\u003Cspan class=\"token operator\">=\u003C/span>\u003Cspan class=\"token punctuation\">[\u003C/span>\u003Cspan class=\"token string\">\"text\"\u003C/span>\u003Cspan class=\"token punctuation\">]\u003C/span>\u003Cspan class=\"token punctuation\">,\u003C/span>\n\u003Cspan class=\"token punctuation\">)\u003C/span>\n\ndemo\u003Cspan class=\"token punctuation\">.\u003C/span>launch\u003Cspan class=\"token punctuation\">(\u003C/span>\u003Cspan class=\"token punctuation\">)\u003C/span>\n\u003C/code>\u003C/pre>\u003C/div>\n\u003Cp class='tip'>\u003Cstrong>✍️ Tip:\u003C/strong> We shorten the imported name from \u003Ccode>gradio\u003C/code> to \u003Ccode>gr\u003C/code> for better readability of code. This is a widely adopted convention that you should follow so that anyone working with your code can easily understand it. \u003C/p>\n\u003Cp>Now, run your code. If you've written the Python code in a file named, for example, \u003Ccode>app.py\u003C/code>, then you would run \u003Ccode>python app.py\u003C/code> from the terminal.\u003C/p>\n\u003Cp>The demo below will open in a browser on \u003Ca\n  href=\"http://localhost:7860\"\n  rel=\"nofollow\"\n>http://localhost:7860\u003C/a> if running from a file. If you are running within a notebook, the demo will appear embedded within the notebook.\u003C/p>\n\u003Cp>\u003Cgradio-app space='gradio/hello_world_4'>\u003C/gradio-app>\u003C/p>\n\u003Cp>Type your name in the textbox on the left, drag the slider, and then press the Submit button. You should see a friendly greeting on the right.\u003Cp class='tip'>\u003Cstrong>✍️ Tip:\u003C/strong> When developing locally, you can run your Gradio app in \u003Cstrong>hot reload mode\u003C/strong>, which automatically reloads the Gradio app whenever you make changes to the file. To do this, simply type in \u003Ccode>gradio\u003C/code> before the name of the file instead of \u003Ccode>python\u003C/code>. In the example above, you would type: \u003Ccode>gradio app.py\u003C/code> in your terminal. Learn more about hot reloading in the \u003Ca href=\"https://www.gradio.app/guides/developing-faster-with-reload-mode\">Hot Reloading Guide\u003C/a>.\u003C/p>\u003C/p>\n\u003Cp>\u003Cstrong>Understanding the \u003Ccode>Interface\u003C/code> Class\u003C/strong>\u003C/p>\n\u003Cp>You'll notice that in order to make your first demo, you created an instance of the \u003Ccode>gr.Interface\u003C/code> class. The \u003Ccode>Interface\u003C/code> class is designed to create demos for machine learning models which accept one or more inputs, and return one or more outputs. \u003C/p>\n\u003Cp>The \u003Ccode>Interface\u003C/code> class has three core arguments:\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>fn\u003C/code>: the function to wrap a user interface (UI) around\u003C/li>\n\u003Cli>\u003Ccode>inputs\u003C/code>: the Gradio component(s) to use for the input. The number of components should match the number of arguments in your function.\u003C/li>\n\u003Cli>\u003Ccode>outputs\u003C/code>: the Gradio component(s) to use for the output. The number of components should match the number of return values from your function.\u003C/li>\n\u003C/ul>\n\u003Cp>The \u003Ccode>fn\u003C/code> argument is very flexible -- you can pass \u003Cem>any\u003C/em> Python function that you want to wrap with a UI. In the example above, we saw a relatively simple function, but the function could be anything from a music generator to a tax calculator to the prediction function of a pretrained machine learning model.\u003C/p>\n\u003Cp>The \u003Ccode>inputs\u003C/code> and \u003Ccode>outputs\u003C/code> arguments take one or more Gradio components. As we'll see, Gradio includes more than \u003Ca\n  href=\"https://www.gradio.app/docs/gradio/components\"\n  rel=\"nofollow\"\n>30 built-in components\u003C/a> (such as the \u003Ccode>gr.Textbox()\u003C/code>, \u003Ccode>gr.Image()\u003C/code>, and \u003Ccode>gr.HTML()\u003C/code> components) that are designed for machine learning applications. \u003Cp class='tip'>\u003Cstrong>✍️ Tip:\u003C/strong> For the \u003Ccode>inputs\u003C/code> and \u003Ccode>outputs\u003C/code> arguments, you can pass in the name of these components as a string (\u003Ccode>\"textbox\"\u003C/code>) or an instance of the class (\u003Ccode>gr.Textbox()\u003C/code>).\u003C/p>\u003C/p>\n\u003Cp>If your function accepts more than one argument, as is the case above, pass a list of input components to \u003Ccode>inputs\u003C/code>, with each input component corresponding to one of the arguments of the function, in order. The same holds true if your function returns more than one value: simply pass in a list of components to \u003Ccode>outputs\u003C/code>. This flexibility makes the \u003Ccode>Interface\u003C/code> class a very powerful way to create demos.\u003C/p>\n\u003Cp>We'll dive deeper into the \u003Ccode>gr.Interface\u003C/code> on our series on \u003Ca\n  href=\"https://www.gradio.app/main/guides/the-interface-class\"\n  rel=\"nofollow\"\n>building Interfaces\u003C/a>.\u003C/p>\n\u003Ch2 class=\"group\" id=\"sharing-your-demo\">Sharing Your Demo\u003Ca\n  href=\"#sharing-your-demo\"\n  class=\"invisible group-hover-visible\"\n>\u003Cimg\n  src=\"data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e\"\n  class=\"anchor-img\"\n>\u003C/a>\u003C/h2>\n\u003Cp>What good is a beautiful demo if you can't share it? Gradio lets you easily share a machine learning demo without having to worry about the hassle of hosting on a web server. Simply set \u003Ccode>share=True\u003C/code> in \u003Ccode>launch()\u003C/code>, and a publicly accessible URL will be created for your demo. Let's revisit our example demo,  but change the last line as follows:\u003C/p>\n\u003Cdiv class=\"codeblock\">\u003Cpre class=\"language-python\">\u003Ccode class=\"language-python\">\u003Cspan class=\"token keyword\">import\u003C/span> gradio \u003Cspan class=\"token keyword\">as\u003C/span> gr\n\n\u003Cspan class=\"token keyword\">def\u003C/span> \u003Cspan class=\"token function\">greet\u003C/span>\u003Cspan class=\"token punctuation\">(\u003C/span>name\u003Cspan class=\"token punctuation\">)\u003C/span>\u003Cspan class=\"token punctuation\">:\u003C/span>\n    \u003Cspan class=\"token keyword\">return\u003C/span> \u003Cspan class=\"token string\">\"Hello \"\u003C/span> \u003Cspan class=\"token operator\">+\u003C/span> name \u003Cspan class=\"token operator\">+\u003C/span> \u003Cspan class=\"token string\">\"!\"\u003C/span>\n\ndemo \u003Cspan class=\"token operator\">=\u003C/span> gr\u003Cspan class=\"token punctuation\">.\u003C/span>Interface\u003Cspan class=\"token punctuation\">(\u003C/span>fn\u003Cspan class=\"token operator\">=\u003C/span>greet\u003Cspan class=\"token punctuation\">,\u003C/span> inputs\u003Cspan class=\"token operator\">=\u003C/span>\u003Cspan class=\"token string\">\"textbox\"\u003C/span>\u003Cspan class=\"token punctuation\">,\u003C/span> outputs\u003Cspan class=\"token operator\">=\u003C/span>\u003Cspan class=\"token string\">\"textbox\"\u003C/span>\u003Cspan class=\"token punctuation\">)\u003C/span>\n    \ndemo\u003Cspan class=\"token punctuation\">.\u003C/span>launch\u003Cspan class=\"token punctuation\">(\u003C/span>share\u003Cspan class=\"token operator\">=\u003C/span>\u003Cspan class=\"token boolean\">True\u003C/span>\u003Cspan class=\"token punctuation\">)\u003C/span>  \u003Cspan class=\"token comment\"># Share your demo with just 1 extra parameter 🚀\u003C/span>\u003C/code>\u003C/pre>\u003C/div>\n\u003Cp>When you run this code, a public URL will be generated for your demo in a matter of seconds, something like:\u003C/p>\n\u003Cp>👉   \u003Ccode>https://a23dsf231adb.gradio.live\u003C/code>\u003C/p>\n\u003Cp>Now, anyone around the world can try your Gradio demo from their browser, while the machine learning model and all computation continues to run locally on your computer.\u003C/p>\n\u003Cp>To learn more about sharing your demo, read our dedicated guide on \u003Ca\n  href=\"https://www.gradio.app/guides/sharing-your-app\"\n  rel=\"nofollow\"\n>sharing your Gradio application\u003C/a>.\u003C/p>\n\u003Ch2 class=\"group\" id=\"core-gradio-classes\">Core Gradio Classes\u003Ca\n  href=\"#core-gradio-classes\"\n  class=\"invisible group-hover-visible\"\n>\u003Cimg\n  src=\"data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e\"\n  class=\"anchor-img\"\n>\u003C/a>\u003C/h2>\n\u003Cp>So far, we've been discussing the \u003Ccode>Interface\u003C/code> class, which is a high-level class that lets to build demos quickly with Gradio. But what else does Gradio include?aaa\u003C/p>\n\u003Ch3 class=\"group\" id=\"chatbots-with-gr-chat-interface\">Chatbots with \u003Ccode>gr.ChatInterface\u003C/code>\u003Ca\n  href=\"#chatbots-with-gr-chat-interface\"\n  class=\"invisible group-hover-visible\"\n>\u003Cimg\n  src=\"data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e\"\n  class=\"anchor-img\"\n>\u003C/a>\u003C/h3>\n\u003Cp>Gradio includes another high-level class, \u003Ccode>gr.ChatInterface\u003C/code>, which is specifically designed to create Chatbot UIs. Similar to \u003Ccode>Interface\u003C/code>, you supply a function and Gradio creates a fully working Chatbot UI. If you're interested in creating a chatbot, you can jump straight to \u003Ca\n  href=\"https://www.gradio.app/guides/creating-a-chatbot-fast\"\n  rel=\"nofollow\"\n>our dedicated guide on \u003Ccode>gr.ChatInterface\u003C/code>\u003C/a>.\u003C/p>\n\u003Ch3 class=\"group\" id=\"custom-demos-with-gr-blocks\">Custom Demos with \u003Ccode>gr.Blocks\u003C/code>\u003Ca\n  href=\"#custom-demos-with-gr-blocks\"\n  class=\"invisible group-hover-visible\"\n>\u003Cimg\n  src=\"data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e\"\n  class=\"anchor-img\"\n>\u003C/a>\u003C/h3>\n\u003Cp>Gradio also offers a low-level approach for designing web apps with more flexible layouts and data flows with the \u003Ccode>gr.Blocks\u003C/code> class. Blocks allows you to do things like control where components appear on the page, handle complex data flows (e.g. outputs can serve as inputs to other functions), and update properties/visibility of components based on user interaction — still all in Python. \u003C/p>\n\u003Cp>You can build very custom and complex applications using \u003Ccode>gr.Blocks()\u003C/code>. For example, the popular image generation \u003Ca\n  href=\"https://github.com/AUTOMATIC1111/stable-diffusion-webui\"\n  rel=\"nofollow\"\n>Automatic1111 Web UI\u003C/a> is built using Gradio Blocks. We dive deeper into the \u003Ccode>gr.Blocks\u003C/code> on our series on \u003Ca\n  href=\"https://www.gradio.app/guides/blocks-and-event-listeners\"\n  rel=\"nofollow\"\n>building with Blocks\u003C/a>.\u003C/p>\n\u003Ch3\n  class=\"group\"\n  id=\"the-gradio-python-and-java-script-ecosystem\"\n>The Gradio Python & JavaScript Ecosystem\u003Ca\n  href=\"#the-gradio-python-and-java-script-ecosystem\"\n  class=\"invisible group-hover-visible\"\n>\u003Cimg\n  src=\"data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e\"\n  class=\"anchor-img\"\n>\u003C/a>\u003C/h3>\n\u003Cp>That's the gist of the core \u003Ccode>gradio\u003C/code> Python library, but Gradio is actually so much more! Its an entire ecosystem of Python and JavaScript libraries that let you build machine learning applications, or query them programmatically, in Python or JavaScript. Here are other related parts of the Gradio ecosystem:\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ca\n  href=\"https://www.gradio.app/guides/getting-started-with-the-python-client\"\n  rel=\"nofollow\"\n>Gradio Python Client\u003C/a> (\u003Ccode>gradio_client\u003C/code>): query any Gradio app programmatically in Python.\u003C/li>\n\u003Cli>\u003Ca\n  href=\"https://www.gradio.app/guides/getting-started-with-the-js-client\"\n  rel=\"nofollow\"\n>Gradio JavaScript Client\u003C/a> (\u003Ccode>@gradio/client\u003C/code>): query any Gradio app programmatically in JavaScript.\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.gradio.app/guides/gradio-lite\" rel=\"nofollow\">Gradio-Lite\u003C/a> (\u003Ccode>@gradio/lite\u003C/code>): write Gradio apps in Python that run entirely in the browser (no server needed!), thanks to Pyodide. \u003C/li>\n\u003Cli>\u003Ca href=\"https://huggingface.co/spaces\" rel=\"nofollow\">Hugging Face Spaces\u003C/a>: the most popular place to host Gradio applications — for free!\u003C/li>\n\u003C/ul>\n\u003Ch2 class=\"group\" id=\"whats-next\">What's Next?\u003Ca href=\"#whats-next\" class=\"invisible group-hover-visible\">\u003Cimg\n  src=\"data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23808080'%20viewBox='0%200%20640%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.0.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M172.5%20131.1C228.1%2075.51%20320.5%2075.51%20376.1%20131.1C426.1%20181.1%20433.5%20260.8%20392.4%20318.3L391.3%20319.9C381%20334.2%20361%20337.6%20346.7%20327.3C332.3%20317%20328.9%20297%20339.2%20282.7L340.3%20281.1C363.2%20249%20359.6%20205.1%20331.7%20177.2C300.3%20145.8%20249.2%20145.8%20217.7%20177.2L105.5%20289.5C73.99%20320.1%2073.99%20372%20105.5%20403.5C133.3%20431.4%20177.3%20435%20209.3%20412.1L210.9%20410.1C225.3%20400.7%20245.3%20404%20255.5%20418.4C265.8%20432.8%20262.5%20452.8%20248.1%20463.1L246.5%20464.2C188.1%20505.3%20110.2%20498.7%2060.21%20448.8C3.741%20392.3%203.741%20300.7%2060.21%20244.3L172.5%20131.1zM467.5%20380C411%20436.5%20319.5%20436.5%20263%20380C213%20330%20206.5%20251.2%20247.6%20193.7L248.7%20192.1C258.1%20177.8%20278.1%20174.4%20293.3%20184.7C307.7%20194.1%20311.1%20214.1%20300.8%20229.3L299.7%20230.9C276.8%20262.1%20280.4%20306.9%20308.3%20334.8C339.7%20366.2%20390.8%20366.2%20422.3%20334.8L534.5%20222.5C566%20191%20566%20139.1%20534.5%20108.5C506.7%2080.63%20462.7%2076.99%20430.7%2099.9L429.1%20101C414.7%20111.3%20394.7%20107.1%20384.5%2093.58C374.2%2079.2%20377.5%2059.21%20391.9%2048.94L393.5%2047.82C451%206.731%20529.8%2013.25%20579.8%2063.24C636.3%20119.7%20636.3%20211.3%20579.8%20267.7L467.5%20380z'/%3e%3c/svg%3e\"\n  class=\"anchor-img\"\n>\u003C/a>\u003C/h2>\n\u003Cp>Keep learning about Gradio sequentially using the Gradio Guides, which include explanations as well as example code and embedded interactive demos. Next up: \u003Ca\n  href=\"https://www.gradio.app/guides/the-interface-class\"\n  rel=\"nofollow\"\n>let's dive deeper into the Interface class\u003C/a>.\u003C/p>\n\u003Cp>Or, if you already know the basics and are looking for something specific, you can search the more \u003Ca\n  href=\"https://www.gradio.app/docs/\"\n  rel=\"nofollow\"\n>technical API documentation\u003C/a>.\u003C/p>\n"},guide_slug:[{text:"Installation",href:"#installation",level:2},{text:"Building Your First Demo",href:"#building-your-first-demo",level:2},{text:"Sharing Your Demo",href:"#sharing-your-demo",level:2},{text:"Core Gradio Classes",href:"#core-gradio-classes",level:2},{text:"Chatbots with gr.ChatInterface",href:"#chatbots-with-gr-chat-interface",level:3},{text:"Custom Demos with gr.Blocks",href:"#custom-demos-with-gr-blocks",level:3},{text:"The Gradio Python & JavaScript Ecosystem",href:"#the-gradio-python-and-java-script-ecosystem",level:3},{text:"What's Next?",href:"#whats-next",level:2}],guide_names:[{category:"Getting Started",guides:[{name:"quickstart",pretty_name:"Quickstart",url:"/guides/quickstart/"},{name:"key-features",pretty_name:"Key Features",url:"/guides/key-features/"}]},{category:"Building Interfaces",guides:[{name:"the-interface-class",pretty_name:"The Interface Class",url:"/guides/the-interface-class/"},{name:"more-on-examples",pretty_name:"More On Examples",url:"/guides/more-on-examples/"},{name:"flagging",pretty_name:"Flagging",url:"/guides/flagging/"},{name:"interface-state",pretty_name:"Interface State",url:"/guides/interface-state/"},{name:"reactive-interfaces",pretty_name:"Reactive Interfaces",url:"/guides/reactive-interfaces/"},{name:"four-kinds-of-interfaces",pretty_name:"Four Kinds Of Interfaces",url:"/guides/four-kinds-of-interfaces/"}]},{category:"Additional Features",guides:[{name:"queuing",pretty_name:"Queuing",url:"/guides/queuing/"},{name:"streaming-outputs",pretty_name:"Streaming Outputs",url:"/guides/streaming-outputs/"},{name:"alerts",pretty_name:"Alerts",url:"/guides/alerts/"},{name:"styling",pretty_name:"Styling",url:"/guides/styling/"},{name:"progress_bars",pretty_name:"Progress_bars",url:"/guides/progress_bars/"},{name:"batch-functions",pretty_name:"Batch Functions",url:"/guides/batch-functions/"},{name:"sharing-your-app",pretty_name:"Sharing Your App",url:"/guides/sharing-your-app/"}]},{category:"Building With Blocks",guides:[{name:"blocks-and-event-listeners",pretty_name:"Blocks And Event Listeners",url:"/guides/blocks-and-event-listeners/"},{name:"controlling-layout",pretty_name:"Controlling Layout",url:"/guides/controlling-layout/"},{name:"state-in-blocks",pretty_name:"State In Blocks",url:"/guides/state-in-blocks/"},{name:"dynamic-apps-with-render-decorator",pretty_name:"Dynamic Apps With Render Decorator",url:"/guides/dynamic-apps-with-render-decorator/"},{name:"custom-CSS-and-JS",pretty_name:"Custom CSS And JS",url:"/guides/custom-CSS-and-JS/"},{name:"using-blocks-like-functions",pretty_name:"Using Blocks Like Functions",url:"/guides/using-blocks-like-functions/"}]},{category:"Chatbots",guides:[{name:"creating-a-chatbot-fast",pretty_name:"Creating A Chatbot Fast",url:"/guides/creating-a-chatbot-fast/"},{name:"creating-a-custom-chatbot-with-blocks",pretty_name:"Creating A Custom Chatbot With Blocks",url:"/guides/creating-a-custom-chatbot-with-blocks/"},{name:"creating-a-discord-bot-from-a-gradio-app",pretty_name:"Creating A Discord Bot From A Gradio App",url:"/guides/creating-a-discord-bot-from-a-gradio-app/"}]},{category:"Custom Components",guides:[{name:"custom-components-in-five-minutes",pretty_name:"Custom Components In Five Minutes",url:"/guides/custom-components-in-five-minutes/"},{name:"key-component-concepts",pretty_name:"Key Component Concepts",url:"/guides/key-component-concepts/"},{name:"configuration",pretty_name:"Configuration",url:"/guides/configuration/"},{name:"backend",pretty_name:"Backend",url:"/guides/backend/"},{name:"frontend",pretty_name:"Frontend",url:"/guides/frontend/"},{name:"frequently-asked-questions",pretty_name:"Frequently Asked Questions",url:"/guides/frequently-asked-questions/"},{name:"pdf-component-example",pretty_name:"Pdf Component Example",url:"/guides/pdf-component-example/"},{name:"multimodal-chatbot-part1",pretty_name:"Multimodal Chatbot Part1",url:"/guides/multimodal-chatbot-part1/"},{name:"documenting-custom-components",pretty_name:"Documenting Custom Components",url:"/guides/documenting-custom-components/"}]},{category:"Tabular Data Science And Plots",guides:[{name:"connecting-to-a-database",pretty_name:"Connecting To A Database",url:"/guides/connecting-to-a-database/"},{name:"creating-a-dashboard-from-bigquery-data",pretty_name:"Creating A Dashboard From Bigquery Data",url:"/guides/creating-a-dashboard-from-bigquery-data/"},{name:"creating-a-dashboard-from-supabase-data",pretty_name:"Creating A Dashboard From Supabase Data",url:"/guides/creating-a-dashboard-from-supabase-data/"},{name:"creating-a-realtime-dashboard-from-google-sheets",pretty_name:"Creating A Realtime Dashboard From Google Sheets",url:"/guides/creating-a-realtime-dashboard-from-google-sheets/"},{name:"plot-component-for-maps",pretty_name:"Plot Component For Maps",url:"/guides/plot-component-for-maps/"},{name:"styling-the-gradio-dataframe",pretty_name:"Styling The Gradio Dataframe",url:"/guides/styling-the-gradio-dataframe/"},{name:"using-gradio-for-tabular-workflows",pretty_name:"Using Gradio For Tabular Workflows",url:"/guides/using-gradio-for-tabular-workflows/"}]},{category:"Gradio Clients And Lite",guides:[{name:"getting-started-with-the-python-client",pretty_name:"Getting Started With The Python Client",url:"/guides/getting-started-with-the-python-client/"},{name:"getting-started-with-the-js-client",pretty_name:"Getting Started With The Js Client",url:"/guides/getting-started-with-the-js-client/"},{name:"querying-gradio-apps-with-curl",pretty_name:"Querying Gradio Apps With Curl",url:"/guides/querying-gradio-apps-with-curl/"},{name:"gradio-and-llm-agents",pretty_name:"Gradio And Llm Agents",url:"/guides/gradio-and-llm-agents/"},{name:"gradio-lite",pretty_name:"Gradio Lite",url:"/guides/gradio-lite/"},{name:"gradio-lite-and-transformers-js",pretty_name:"Gradio Lite And Transformers Js",url:"/guides/gradio-lite-and-transformers-js/"},{name:"fastapi-app-with-the-gradio-client",pretty_name:"Fastapi App With The Gradio Client",url:"/guides/fastapi-app-with-the-gradio-client/"}]},{category:"Other Tutorials",guides:[{name:"using-hugging-face-integrations",pretty_name:"Using Hugging Face Integrations",url:"/guides/using-hugging-face-integrations/"},{name:"Gradio-and-Comet",pretty_name:"Gradio And Comet",url:"/guides/Gradio-and-Comet/"},{name:"Gradio-and-ONNX-on-Hugging-Face",pretty_name:"Gradio And ONNX On Hugging Face",url:"/guides/Gradio-and-ONNX-on-Hugging-Face/"},{name:"Gradio-and-Wandb-Integration",pretty_name:"Gradio And Wandb Integration",url:"/guides/Gradio-and-Wandb-Integration/"},{name:"create-your-own-friends-with-a-gan",pretty_name:"Create Your Own Friends With A Gan",url:"/guides/create-your-own-friends-with-a-gan/"},{name:"deploying-gradio-with-docker",pretty_name:"Deploying Gradio With Docker",url:"/guides/deploying-gradio-with-docker/"},{name:"developing-faster-with-reload-mode",pretty_name:"Developing Faster With Reload Mode",url:"/guides/developing-faster-with-reload-mode/"},{name:"how-to-use-3D-model-component",pretty_name:"How To Use 3D Model Component",url:"/guides/how-to-use-3D-model-component/"},{name:"image-classification-in-pytorch",pretty_name:"Image Classification In Pytorch",url:"/guides/image-classification-in-pytorch/"},{name:"image-classification-in-tensorflow",pretty_name:"Image Classification In Tensorflow",url:"/guides/image-classification-in-tensorflow/"},{name:"image-classification-with-vision-transformers",pretty_name:"Image Classification With Vision Transformers",url:"/guides/image-classification-with-vision-transformers/"},{name:"installing-gradio-in-a-virtual-environment",pretty_name:"Installing Gradio In A Virtual Environment",url:"/guides/installing-gradio-in-a-virtual-environment/"},{name:"named-entity-recognition",pretty_name:"Named Entity Recognition",url:"/guides/named-entity-recognition/"},{name:"real-time-speech-recognition",pretty_name:"Real Time Speech Recognition",url:"/guides/real-time-speech-recognition/"},{name:"running-background-tasks",pretty_name:"Running Background Tasks",url:"/guides/running-background-tasks/"},{name:"running-gradio-on-your-web-server-with-nginx",pretty_name:"Running Gradio On Your Web Server With Nginx",url:"/guides/running-gradio-on-your-web-server-with-nginx/"},{name:"setting-up-a-demo-for-maximum-performance",pretty_name:"Setting Up A Demo For Maximum Performance",url:"/guides/setting-up-a-demo-for-maximum-performance/"},{name:"theming-guide",pretty_name:"Theming Guide",url:"/guides/theming-guide/"},{name:"using-flagging",pretty_name:"Using Flagging",url:"/guides/using-flagging/"},{name:"wrapping-layouts",pretty_name:"Wrapping Layouts",url:"/guides/wrapping-layouts/"}]}]},"uses":{"params":["version","guide"]}}];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.DeGkUWpD.js"),
+						import("../_app/immutable/entry/app.zeLHmYJV.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 14],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+   </script>
+  </div>
+ </body>
+</html>

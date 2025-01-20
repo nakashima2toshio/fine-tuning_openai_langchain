@@ -1,0 +1,26 @@
+version: '3'
+services:
+  demo-app:
+    build: .
+    volumes:
+      - .dockervenv:/src/.venv
+      - .:/src
+    ports:
+      - 8000:8000  # ホストマシンのポート8000を、docker内のポート8000に接続する
+    environment:
+      - WATCHFILES_FORCE_POLLING=true  # 環境によってホットリロードのために必要
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:latest
+    container_name: postgres_db
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+    ports:
+      - 5432:5432
+volumes:
+  postgres_data:
